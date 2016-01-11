@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.dyn.voicecontrol"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="3dp" 
+    android:paddingBottom="3dp" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <com.dyn.customview.CircleImageView
+            android:id="@+id/iv_robothead"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            app:border_color="@color/gray"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_chatcontent"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_robothead"
+            android:background="@drawable/chatfrom_bg" />
+
+    </RelativeLayout>
+
+</LinearLayout>

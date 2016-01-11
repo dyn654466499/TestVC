@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dyn.activities.QRCodeCaptureActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_capture_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue" >
+
+        <ImageButton
+            android:id="@+id/ImageBtn_capture_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/icon_title_back" 
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:text="二维码/条码" />
+        
+        <ImageButton
+            android:id="@+id/imageBtn_capture_moreMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/icon_nav_more_white" 
+            />
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.dyn.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/button_capture_turnFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/btn_press_frame"
+            android:text="开启闪光灯"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+</LinearLayout>

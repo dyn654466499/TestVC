@@ -1,0 +1,867 @@
+com.dyn.ResideMenu.ResideMenu:
+    public static final int DIRECTION_LEFT
+    public static final int DIRECTION_RIGHT
+    private static final int PRESSED_MOVE_HORIZANTAL
+    private static final int PRESSED_DOWN
+    private static final int PRESSED_DONE
+    private static final int PRESSED_MOVE_VERTICAL
+    private android.view.GestureDetector gestureDetector
+    153:155:public void addMenuItem(com.dyn.ResideMenu.ResideMenuItem)
+    223:226:public java.util.List getMenuItems(int)
+    435:436:public void addIgnoredView(android.view.View)
+    443:444:public void removeIgnoredView(android.view.View)
+    450:451:public void clearIgnoredViewList()
+com.dyn.ResideMenu.ResideMenuItem:
+    30:34:public ResideMenuItem(android.content.Context,int,int)
+com.dyn.ResideMenu.TouchDisableView:
+    38:38:public android.view.View getContent()
+    70:70:boolean isTouchDisabled()
+com.dyn.activities.BaseActivity$ButtonListener
+com.dyn.activities.ListAppsActivity:
+    public static final java.lang.String TAG
+    public static final int START
+    public static final int UNINSTALL
+    public static final int SEARCH
+    private android.view.View moreView
+com.dyn.activities.MainActivity:
+    private static final int menu_delete
+    private static final int menu_queryApp
+    private static final int menu_setHeadImage
+    private static final int menu_help
+    private static final int menu_detail
+    private static final int menu_share
+    private static final java.lang.String USER_HEAD
+    private static final java.lang.String ROBOT_HEAD
+    private static final int USER_IMAGE_REQUEST_CODE
+    private static final int ROBOT_IMAGE_REQUEST_CODE
+    private static final int USER_RESULT_REQUEST_CODE
+    private static final int ROBOT_RESULT_REQUEST_CODE
+    private static final int CAMERA_REQUEST_CODE
+    private static final int FILE_REQUEST_CODE
+    public static final int SEARCH_TEXT
+    private static final int NOTIFICATION_ID
+    1169:1195:private void setAlarmToRemind(java.util.Calendar)
+    1724:1732:private static int sampleSize(int,int)
+    1813:1814:public static int px2dip(android.content.Context,float)
+    1818:1819:public static int dip2px(android.content.Context,float)
+    2223:2259:public android.graphics.Bitmap scaleImage()
+com.dyn.activities.MapActivity:
+    private static final java.lang.String APP_FOLDER_NAME
+    private static final int DrivingRouteLine
+    private static final int WalkingRouteLine
+    private static final int TransitRouteLine
+com.dyn.activities.QRCodeCaptureActivity:
+    public static final java.lang.String ACTION_ADD_SHORTCUT
+    private static final int PICK_QRCODE_REQUEST_CODE
+    513:517:public void restartPreviewAfterDelay(long)
+com.dyn.activities.SearchActivity:
+    public static final int VOICE_RECOGNITION_REQUEST_CODE
+com.dyn.activities.WeatherActivity:
+    private android.widget.TextView todayDate
+com.dyn.adapters.ChatMsgViewAdapter$IMsgViewType
+com.dyn.adapters.ListAppsAdapter:
+    129:129:public java.util.List getAppData()
+com.dyn.adapters.RouteLinesAdapter:
+    54:54:public int getPosition(java.lang.String)
+com.dyn.adapters.ShareAdapter
+com.dyn.adapters.ShareAdapter$ViewHolder
+com.dyn.adapters.TransitRouteLinesAdapter:
+    56:56:public int getPosition(java.lang.String)
+com.dyn.beans.BusLineInfo
+com.dyn.beans.ChatMsgEntity:
+    25:25:public java.lang.String getName()
+    60:66:public ChatMsgEntity(java.lang.String,java.lang.String,java.lang.String,boolean,android.graphics.drawable.Drawable)
+com.dyn.beans.NavigationInfo:
+    private com.baidu.navisdk.adapter.BNRoutePlanNode$CoordinateType coType
+    53:53:public com.baidu.navisdk.adapter.BNRoutePlanNode$CoordinateType getCoType()
+    56:57:public void setCoType(com.baidu.navisdk.adapter.BNRoutePlanNode$CoordinateType)
+com.dyn.beans.WeatherInfo:
+    45:45:public java.lang.String getCitycode()
+    95:95:public java.lang.String getLocation()
+    98:99:public void setLocation(java.lang.String)
+com.dyn.consts.Constants
+com.dyn.consts.ControlState
+com.dyn.controlers.BaseControler
+com.dyn.controlers.BaseControler$1
+com.dyn.controlers.BaseControler$2
+com.dyn.controlers.BaseControler$3
+com.dyn.controlers.BaseControler$ViewChangeListener
+com.dyn.controlers.ControlerState
+com.dyn.customview.AlwaysMarqueeTextView:
+    79:80:public void stopScroll()
+com.dyn.customview.CircleImageView:
+    private static final int COLORDRAWABLE_DIMENSION
+    private static final int DEFAULT_BORDER_WIDTH
+    private static final int DEFAULT_BORDER_COLOR
+com.dyn.customview.CustomToast:
+    public static final int LENGTH_SHORT
+    public static final int LENGTH_LONG
+    private static final java.lang.String TAG_PRIMARY_VIEW
+    75:76:public void setView(android.view.View)
+    92:93:public void setDuration(int)
+    100:100:public int getDuration()
+    114:116:public void setMargin(float,float)
+    122:122:public float getHorizontalMargin()
+    129:129:public float getVerticalMargin()
+    149:149:public int getGravity()
+    156:156:public int getXOffset()
+    163:163:public int getYOffset()
+    269:270:public void setText(int)
+com.dyn.customview.HorizontalListView:
+    private static final int INSERT_AT_END_OF_LIST
+    private static final int INSERT_AT_START_OF_LIST
+    private static final float FLING_DEFAULT_ABSORB_VELOCITY
+    private static final float FLING_FRICTION
+    private static final java.lang.String BUNDLE_ID_CURRENT_X
+    private static final java.lang.String BUNDLE_ID_PARENT_STATE
+    867:870:public void scrollTo(int)
+com.dyn.customview.HorizontalListView$HoneycombPlus:
+    1306:1306:private HorizontalListView$HoneycombPlus()
+com.dyn.customview.HorizontalListView$IceCreamSandwichPlus:
+    1323:1323:private HorizontalListView$IceCreamSandwichPlus()
+com.dyn.customview.ProgressWebView:
+    private java.lang.String title
+com.dyn.models.BaseModel:
+    37:37:protected java.lang.String getTAG()
+com.dyn.models.WeatherModel:
+    private static final java.lang.String DEF_CHATSET
+    private static final int DEF_CONN_TIMEOUT
+    private static final int DEF_READ_TIMEOUT
+    private static final java.lang.String userAgent
+    private static final java.lang.String WEATHER_APP_KEY
+    private static final java.lang.String weather_url
+com.dyn.utils.AutoLoadingUtils:
+    14:14:public AutoLoadingUtils()
+    66:66:public static void showFailView()
+com.dyn.utils.BaiduMapUtil:
+    45:45:public BaiduMapUtil()
+com.dyn.utils.BaiduMapUtil$2:
+    165:165:public void onReceivePoi(com.baidu.location.BDLocation)
+com.dyn.utils.CommonUtil:
+    46:46:public CommonUtil()
+    58:60:public static boolean isPhoneNum(java.lang.String)
+    106:118:public static java.lang.String getFormatDuration(java.lang.String)
+    127:139:public static boolean isConnectingToInternet(android.content.Context)
+    186:199:public java.lang.String readFileData(java.lang.String)
+    208:210:public static java.lang.String formatPhoneNum(java.lang.String)
+    224:227:public static android.text.SpannableString setFontType(java.lang.String,int,int,int,int)
+    236:257:public static boolean upgradeRootPermission(java.lang.String)
+    373:373:public static int getVersionCode(android.content.Context)
+    415:420:public static java.lang.String stringFilter(java.lang.String)
+    478:479:public int Dp2Px(android.content.Context,float)
+    486:487:public int Px2Dp(android.content.Context,float)
+com.dyn.utils.DataCacheUtils:
+    17:17:public DataCacheUtils()
+    33:35:public static void cleanDatabases(android.content.Context)
+    43:45:public static void cleanSharedPreference(android.content.Context)
+    54:55:public static void cleanDatabaseByName(android.content.Context,java.lang.String)
+    63:64:public static void cleanFiles(android.content.Context)
+    72:76:public static void cleanExternalCache(android.content.Context)
+    84:85:public static void cleanCustomCache(java.lang.String)
+    94:105:public static varargs void cleanApplicationData(android.content.Context,java.lang.String[])
+    151:174:public static void deleteFolderFile(java.lang.String,boolean)
+com.dyn.utils.DataHoldUtil:
+    7:7:public DataHoldUtil()
+    98:98:public static boolean isServiceFirstStart()
+    102:103:public static void setServiceFirstStart(boolean)
+com.dyn.utils.DialogUtils:
+    18:18:public DialogUtils()
+    62:70:public static void showDialog(android.content.Context,java.lang.String,java.lang.String,android.view.View)
+com.dyn.utils.ImageUtil:
+    46:46:public ImageUtil()
+    53:87:public static java.util.List getLocalImage(android.content.Context)
+    93:103:public static android.graphics.Bitmap compressImage(android.graphics.Bitmap)
+    108:130:public static android.graphics.Bitmap getImageFromPath(java.lang.String,float)
+    135:166:public static android.graphics.Bitmap compBitmap(android.graphics.Bitmap)
+    171:194:public static android.graphics.Bitmap compBitmap(java.io.InputStream,float)
+    199:202:public static java.lang.String getBitmapStrBase64(android.graphics.Bitmap)
+    207:208:public static android.graphics.Bitmap getBitmapFromBase64(java.lang.String)
+    212:214:public static android.graphics.drawable.Drawable convertBitmap2Drawable(android.graphics.Bitmap)
+    227:235:public static android.graphics.Bitmap scaleToFit(android.graphics.Bitmap,float,float,int)
+    261:278:public static java.lang.String getAbsoluteImagePath(android.content.Context,android.net.Uri)
+    289:309:public static int readPictureDegree(java.lang.String)
+com.dyn.utils.JsonUtil:
+    private static final java.lang.String TAG
+    19:19:public JsonUtil()
+    56:67:public static java.lang.String getKeywords(java.lang.String)
+    218:234:public static boolean isWeather(java.lang.String)
+com.dyn.utils.NetUtil:
+    private static final java.lang.String ping_passTag
+    52:52:public NetUtil()
+    73:134:public static java.lang.String HttpPost(java.lang.String,java.util.HashMap)
+    150:208:public static java.lang.String HttpGet(java.lang.String,java.util.HashMap)
+    217:217:public static boolean ping(java.lang.String)
+    268:275:public static void setTimeout(int)
+    278:286:public static void setPHPSESSID(java.util.List)
+    296:309:public static java.lang.String getLocalIpAddress()
+    317:319:public static java.lang.String getLocalMacAddress(android.content.Context)
+com.dyn.utils.NetUtil$1
+com.dyn.utils.NetUtil$2
+com.dyn.utils.NetUtil$3
+com.dyn.utils.QQUtil:
+    private static final java.lang.String TAG
+    private static android.app.Dialog mProgressDialog
+    private static android.widget.Toast mToast
+    private static final int MAX_DECODE_PICTURE_SIZE
+    private static final java.lang.String PATH_DOCUMENT
+    36:36:public QQUtil()
+    48:60:public static java.lang.String bytesToHexString(byte[])
+    68:79:public static byte[] hexStringToBytes(java.lang.String)
+    87:87:private static byte charToByte(char)
+    100:114:public static java.lang.String toHexString(java.lang.String)
+    120:145:public static java.lang.String hexToString(java.lang.String)
+    149:162:public static byte[] bmpToByteArray(android.graphics.Bitmap,boolean)
+    166:183:public static byte[] getHtmlByteArray(java.lang.String)
+    188:200:public static byte[] inputStreamToByte(java.io.InputStream)
+    204:245:public static byte[] readFromFile(java.lang.String,int,int)
+    252:274:public static int computeSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    281:315:private static int computeInitialSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    325:335:public static android.graphics.Bitmap readBitmap(java.lang.String)
+    341:416:public static android.graphics.Bitmap extractThumbNail(java.lang.String,int,int,boolean)
+    421:426:public static final void showResultDialog(android.content.Context,java.lang.String,java.lang.String)
+    430:438:public static final void showProgressDialog(android.content.Context,java.lang.String,java.lang.String)
+    443:448:public static android.app.AlertDialog showConfirmCancelDialog(android.content.Context,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener)
+    452:456:public static final void dismissDialog()
+    468:487:public static final void toastMessage(android.app.Activity,java.lang.String,java.lang.String)
+    499:500:public static final void toastMessage(android.app.Activity,java.lang.String)
+    510:532:public static android.graphics.Bitmap getbitmap(java.lang.String)
+    536:538:public static void release()
+    41:41:static synthetic android.widget.Toast access$0()
+    41:41:static synthetic void access$1(android.widget.Toast)
+com.dyn.utils.QQUtil$1
+com.dyn.utils.SharedPreferenceUtils:
+    12:12:public SharedPreferenceUtils()
+    73:74:public static java.lang.String getCurrentAddress(android.content.Context)
+com.dyn.utils.SpeechContentHandleUtil
+com.dyn.utils.TestWeather
+com.dyn.utils.ThreadManager
+com.dyn.utils.UnpackSoUtil:
+    5:5:public UnpackSoUtil()
+com.dyn.utils.Util
+com.dyn.utils.Util$1
+com.dyn.voicecontrol.BuildConfig
+com.dyn.voicecontrol.MyApplication:
+    private static final int MSG_WRITE_ERROR
+com.dyn.voicecontrol.R:
+    10:10:public R()
+com.dyn.zxing.LuminanceSource.RGBLuminanceSource:
+    47:48:public RGBLuminanceSource(java.lang.String)
+    71:75:private static android.graphics.Bitmap loadBitmap(java.lang.String)
+com.dyn.zxing.camera.AutoFocusManager:
+    private static final long AUTO_FOCUS_INTERVAL_MS
+com.dyn.zxing.camera.CameraConfigurationManager:
+    private static final java.lang.String TAG
+    private static final int MIN_PREVIEW_PIXELS
+    private static final int MAX_PREVIEW_PIXELS
+com.dyn.zxing.camera.open.GingerbreadOpenCameraInterface
+com.dyn.zxing.control.AmbientLightManager:
+    private static final float TOO_DARK_LUX
+    private static final float BRIGHT_ENOUGH_LUX
+com.dyn.zxing.control.BeepManager:
+    private static final float BEEP_VOLUME
+    private static final long VIBRATE_DURATION
+com.dyn.zxing.decode.DecodeFormatManager:
+    52:52:private DecodeFormatManager()
+    55:60:static java.util.Collection parseDecodeFormats(android.content.Intent)
+    64:68:static java.util.Collection parseDecodeFormats(android.net.Uri)
+    73:98:private static java.util.Collection parseDecodeFormats(java.lang.Iterable,java.lang.String)
+com.dyn.zxing.decode.DecodeThread:
+    public static final java.lang.String BARCODE_BITMAP
+    public static final java.lang.String BARCODE_SCALED_FACTOR
+com.dyn.zxing.decode.InactivityTimer:
+    private static final long INACTIVITY_DELAY_MS
+com.dyn.zxing.decode.Intents
+com.dyn.zxing.decode.Intents$Encode
+com.dyn.zxing.decode.Intents$History
+com.dyn.zxing.decode.Intents$Scan
+com.dyn.zxing.decode.Intents$SearchBookContents
+com.dyn.zxing.decode.Intents$Share
+com.dyn.zxing.decode.Intents$WifiConnect
+com.dyn.zxing.view.ViewfinderView:
+    private static final int CURRENT_POINT_OPACITY
+    private static final int MAX_RESULT_POINTS
+    private static final long ANIMATION_DELAY
+    private static final int TEXT_SIZE
+    private static final int TEXT_PADDING_TOP
+    205:207:public void drawResultBitmap(android.graphics.Bitmap)
+com.google.protobuf.ByteString:
+    public final boolean isEmpty()
+    public static com.google.protobuf.ByteString copyFrom(java.nio.ByteBuffer,int)
+    public static com.google.protobuf.ByteString copyFrom(java.nio.ByteBuffer)
+    public static com.google.protobuf.ByteString copyFrom(java.lang.String,java.lang.String)
+    public static com.google.protobuf.ByteString copyFrom(java.util.List)
+    public final void copyTo(byte[],int)
+    public final void copyTo(java.nio.ByteBuffer)
+    public final java.nio.ByteBuffer asReadOnlyByteBuffer()
+    public final java.lang.String toString(java.lang.String)
+    public static com.google.protobuf.ByteString$b newOutput(int)
+    public static com.google.protobuf.ByteString$b newOutput()
+com.google.protobuf.ByteString$1
+com.google.protobuf.ByteString$b
+com.google.protobuf.CodedInputStream:
+    public final double readDouble()
+    public final float readFloat()
+    public final long readInt64()
+    public final long readFixed64()
+    public final int readFixed32()
+    public final java.lang.String readString()
+    public final void readGroup(int,com.google.protobuf.MessageLite$a,com.google.protobuf.ExtensionRegistryLite)
+    public final void readUnknownGroup(int,com.google.protobuf.MessageLite$a)
+    public final int readUInt32()
+    public final int readSFixed32()
+    public final long readSFixed64()
+    public final int readSInt32()
+    public final long readSInt64()
+    public static int decodeZigZag32(int)
+    public static long decodeZigZag64(long)
+    public final int setRecursionLimit(int)
+    public final int setSizeLimit(int)
+    public final void resetSizeCounter()
+    public final int getBytesUntilLimit()
+    public final int getTotalBytesRead()
+com.google.protobuf.CodedOutputStream:
+    public static com.google.protobuf.CodedOutputStream newInstance(java.io.OutputStream)
+    public final void writeDouble(int,double)
+    public final void writeFloat(int,float)
+    public final void writeInt64(int,long)
+    public final void writeFixed64(int,long)
+    public final void writeFixed32(int,int)
+    public final void writeString(int,java.lang.String)
+    public final void writeGroup(int,com.google.protobuf.MessageLite)
+    public final void writeUnknownGroup(int,com.google.protobuf.MessageLite)
+    public final void writeUInt32(int,int)
+    public final void writeSFixed32(int,int)
+    public final void writeSFixed64(int,long)
+    public final void writeSInt32(int,int)
+    public final void writeSInt64(int,long)
+    public final void writeMessageSetExtension(int,com.google.protobuf.MessageLite)
+    public final void writeRawMessageSetExtension(int,com.google.protobuf.ByteString)
+    public final void writeDoubleNoTag(double)
+    public final void writeFloatNoTag(float)
+    public final void writeInt64NoTag(long)
+    public final void writeFixed64NoTag(long)
+    public final void writeFixed32NoTag(int)
+    public final void writeStringNoTag(java.lang.String)
+    public final void writeGroupNoTag(com.google.protobuf.MessageLite)
+    public final void writeUnknownGroupNoTag(com.google.protobuf.MessageLite)
+    public final void writeUInt32NoTag(int)
+    public final void writeSFixed32NoTag(int)
+    public final void writeSFixed64NoTag(long)
+    public final void writeSInt32NoTag(int)
+    public final void writeSInt64NoTag(long)
+    public static int computeDoubleSize(int,double)
+    public static int computeFloatSize(int,float)
+    public static int computeInt64Size(int,long)
+    public static int computeFixed64Size(int,long)
+    public static int computeFixed32Size(int,int)
+    public static int computeStringSize(int,java.lang.String)
+    public static int computeGroupSize(int,com.google.protobuf.MessageLite)
+    public static int computeUnknownGroupSize(int,com.google.protobuf.MessageLite)
+    public static int computeUInt32Size(int,int)
+    public static int computeSFixed32Size(int,int)
+    public static int computeSFixed64Size(int,long)
+    public static int computeSInt32Size(int,int)
+    public static int computeSInt64Size(int,long)
+    public static int computeMessageSetExtensionSize(int,com.google.protobuf.MessageLite)
+    public static int computeRawMessageSetExtensionSize(int,com.google.protobuf.ByteString)
+    public static int computeDoubleSizeNoTag(double)
+    public static int computeFloatSizeNoTag(float)
+    public static int computeInt64SizeNoTag(long)
+    public static int computeFixed64SizeNoTag(long)
+    public static int computeFixed32SizeNoTag(int)
+    public static int computeStringSizeNoTag(java.lang.String)
+    public static int computeGroupSizeNoTag(com.google.protobuf.MessageLite)
+    public static int computeUnknownGroupSizeNoTag(com.google.protobuf.MessageLite)
+    public static int computeUInt32SizeNoTag(int)
+    public static int computeSFixed32SizeNoTag(int)
+    public static int computeSFixed64SizeNoTag(long)
+    public static int computeSInt32SizeNoTag(int)
+    public static int computeSInt64SizeNoTag(long)
+    public final void writeRawBytes(byte[])
+    public final void writeRawBytes(byte[],int,int)
+    public final void writeRawLittleEndian32(int)
+    public final void writeRawLittleEndian64(long)
+    public static int encodeZigZag32(int)
+    public static long encodeZigZag64(long)
+com.google.protobuf.ExtensionRegistryLite:
+    public static com.google.protobuf.ExtensionRegistryLite newInstance()
+    public com.google.protobuf.ExtensionRegistryLite getUnmodifiable()
+    public com.google.protobuf.GeneratedMessageLite$b findLiteExtensionByNumber(com.google.protobuf.MessageLite,int)
+    public final void add(com.google.protobuf.GeneratedMessageLite$b)
+    private ExtensionRegistryLite(com.google.protobuf.ExtensionRegistryLite)
+com.google.protobuf.ExtensionRegistryLite$a
+com.google.protobuf.GeneratedMessageLite$1
+com.google.protobuf.GeneratedMessageLite$a:
+    public final int a()
+com.google.protobuf.GeneratedMessageLite$b:
+    public final com.google.protobuf.MessageLite a()
+    public final int b()
+com.google.protobuf.Internal:
+    public Internal()
+    public static java.lang.String stringDefaultValue(java.lang.String)
+    public static com.google.protobuf.ByteString bytesDefaultValue(java.lang.String)
+com.google.protobuf.Internal$EnumLite:
+    public abstract int getNumber()
+com.google.protobuf.Internal$EnumLiteMap:
+    public abstract com.google.protobuf.Internal$EnumLite findValueByNumber(int)
+com.google.protobuf.MessageLite:
+    public abstract com.google.protobuf.ByteString toByteString()
+    public abstract void writeTo(java.io.OutputStream)
+    public abstract void writeDelimitedTo(java.io.OutputStream)
+    public abstract com.google.protobuf.MessageLite$a newBuilderForType()
+    public abstract com.google.protobuf.MessageLite$a toBuilder()
+com.google.protobuf.MessageLiteOrBuilder
+com.google.protobuf.UninitializedMessageException:
+    public UninitializedMessageException(java.util.List)
+    public java.util.List getMissingFields()
+    private static java.lang.String a(java.util.List)
+com.google.protobuf.c$1
+com.google.zxing.BinaryBitmap:
+    94:94:public boolean isCropSupported()
+    108:109:public com.google.zxing.BinaryBitmap crop(int,int,int,int)
+    137:138:public com.google.zxing.BinaryBitmap rotateCounterClockwise45()
+com.google.zxing.ChecksumException:
+    37:38:private ChecksumException(java.lang.Throwable)
+    45:45:public static com.google.zxing.ChecksumException getChecksumInstance(java.lang.Throwable)
+com.google.zxing.DecodeHintType:
+    119:119:public java.lang.Class getValueType()
+com.google.zxing.Dimension
+com.google.zxing.InvertedLuminanceSource
+com.google.zxing.LuminanceSource:
+    80:80:public boolean isCropSupported()
+    94:94:public com.google.zxing.LuminanceSource crop(int,int,int,int)
+    109:109:public com.google.zxing.LuminanceSource invert()
+    129:129:public com.google.zxing.LuminanceSource rotateCounterClockwise45()
+com.google.zxing.MultiFormatReader:
+    54:55:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.MultiFormatWriter
+com.google.zxing.MultiFormatWriter$1
+com.google.zxing.PlanarYUVLuminanceSource:
+    private static final int THUMBNAIL_SCALE_FACTOR
+    110:110:public boolean isCropSupported()
+    115:115:public com.google.zxing.LuminanceSource crop(int,int,int,int)
+com.google.zxing.RGBLuminanceSource
+com.google.zxing.Reader:
+    public abstract com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.Result:
+    125:125:public long getTimestamp()
+com.google.zxing.Writer
+com.google.zxing.aztec.AztecReader:
+    52:52:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.aztec.AztecWriter
+com.google.zxing.aztec.decoder.Decoder:
+    84:84:public static java.lang.String highLevelDecode(boolean[])
+com.google.zxing.aztec.detector.Detector:
+    52:52:public com.google.zxing.aztec.AztecDetectorResult detect()
+com.google.zxing.aztec.encoder.AztecCode
+com.google.zxing.aztec.encoder.BinaryShiftToken
+com.google.zxing.aztec.encoder.Encoder
+com.google.zxing.aztec.encoder.HighLevelEncoder
+com.google.zxing.aztec.encoder.HighLevelEncoder$1
+com.google.zxing.aztec.encoder.SimpleToken
+com.google.zxing.aztec.encoder.State
+com.google.zxing.aztec.encoder.Token
+com.google.zxing.client.result.AbstractDoCoMoResultParser
+com.google.zxing.client.result.AddressBookAUResultParser
+com.google.zxing.client.result.AddressBookDoCoMoResultParser
+com.google.zxing.client.result.AddressBookParsedResult
+com.google.zxing.client.result.BizcardResultParser
+com.google.zxing.client.result.BookmarkDoCoMoResultParser
+com.google.zxing.client.result.CalendarParsedResult
+com.google.zxing.client.result.EmailAddressParsedResult
+com.google.zxing.client.result.EmailAddressResultParser
+com.google.zxing.client.result.EmailDoCoMoResultParser
+com.google.zxing.client.result.ExpandedProductParsedResult
+com.google.zxing.client.result.ExpandedProductResultParser
+com.google.zxing.client.result.GeoParsedResult
+com.google.zxing.client.result.GeoResultParser
+com.google.zxing.client.result.ISBNParsedResult
+com.google.zxing.client.result.ISBNResultParser
+com.google.zxing.client.result.ParsedResult
+com.google.zxing.client.result.ParsedResultType
+com.google.zxing.client.result.ProductParsedResult
+com.google.zxing.client.result.ProductResultParser
+com.google.zxing.client.result.ResultParser
+com.google.zxing.client.result.SMSMMSResultParser
+com.google.zxing.client.result.SMSParsedResult
+com.google.zxing.client.result.SMSTOMMSTOResultParser
+com.google.zxing.client.result.SMTPResultParser
+com.google.zxing.client.result.TelParsedResult
+com.google.zxing.client.result.TelResultParser
+com.google.zxing.client.result.TextParsedResult
+com.google.zxing.client.result.URIParsedResult
+com.google.zxing.client.result.URIResultParser
+com.google.zxing.client.result.URLTOResultParser
+com.google.zxing.client.result.VCardResultParser
+com.google.zxing.client.result.VEventResultParser
+com.google.zxing.client.result.VINParsedResult
+com.google.zxing.client.result.VINResultParser
+com.google.zxing.client.result.WifiParsedResult
+com.google.zxing.client.result.WifiResultParser
+com.google.zxing.common.BitArray:
+    86:87:public void flip(int)
+    154:177:public void setRange(int,int)
+com.google.zxing.common.BitMatrix:
+    66:119:public static com.google.zxing.common.BitMatrix parse(java.lang.String,java.lang.String,java.lang.String)
+    146:148:public void unset(int,int)
+    168:180:public void xor(com.google.zxing.common.BitMatrix)
+    186:190:public void clear()
+    385:385:public int getRowSize()
+com.google.zxing.common.DecoderResult:
+    78:78:public java.lang.Integer getErrorsCorrected()
+    86:86:public java.lang.Integer getErasures()
+com.google.zxing.common.GlobalHistogramBinarizer:
+    private static final int LUMINANCE_BITS
+    private static final int LUMINANCE_SHIFT
+    private static final int LUMINANCE_BUCKETS
+com.google.zxing.common.GridSampler:
+    48:49:public static void setGridSampler(com.google.zxing.common.GridSampler)
+com.google.zxing.common.HybridBinarizer:
+    private static final int BLOCK_SIZE_POWER
+    private static final int BLOCK_SIZE
+    private static final int BLOCK_SIZE_MASK
+    private static final int MINIMUM_DIMENSION
+    private static final int MIN_DYNAMIC_RANGE
+com.google.zxing.common.PerspectiveTransform:
+    87:95:public void transformPoints(float[],float[])
+com.google.zxing.common.StringUtils:
+    public static final java.lang.String SHIFT_JIS
+    public static final java.lang.String GB2312
+    private static final java.lang.String EUC_JP
+    private static final java.lang.String UTF8
+    private static final java.lang.String ISO88591
+    42:42:private StringUtils()
+com.google.zxing.common.detector.MathUtils:
+    21:22:private MathUtils()
+com.google.zxing.common.detector.MonochromeRectangleDetector
+com.google.zxing.common.detector.WhiteRectangleDetector:
+    private static final int INIT_SIZE
+    private static final int CORR
+com.google.zxing.datamatrix.DataMatrixReader:
+    59:59:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.datamatrix.DataMatrixWriter
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser:
+    82:83:private DecodedBitStreamParser()
+com.google.zxing.datamatrix.decoder.Decoder:
+    51:60:public com.google.zxing.common.DecoderResult decode(boolean[][])
+com.google.zxing.datamatrix.encoder.ASCIIEncoder
+com.google.zxing.datamatrix.encoder.Base256Encoder
+com.google.zxing.datamatrix.encoder.C40Encoder
+com.google.zxing.datamatrix.encoder.DataMatrixSymbolInfo144
+com.google.zxing.datamatrix.encoder.DefaultPlacement
+com.google.zxing.datamatrix.encoder.EdifactEncoder
+com.google.zxing.datamatrix.encoder.Encoder
+com.google.zxing.datamatrix.encoder.EncoderContext
+com.google.zxing.datamatrix.encoder.ErrorCorrection
+com.google.zxing.datamatrix.encoder.HighLevelEncoder
+com.google.zxing.datamatrix.encoder.SymbolInfo
+com.google.zxing.datamatrix.encoder.SymbolShapeHint
+com.google.zxing.datamatrix.encoder.TextEncoder
+com.google.zxing.datamatrix.encoder.X12Encoder
+com.google.zxing.maxicode.MaxiCodeReader:
+    private static final int MATRIX_WIDTH
+    private static final int MATRIX_HEIGHT
+    62:62:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.maxicode.decoder.DecodedBitStreamParser:
+    private static final char SHIFTA
+    private static final char SHIFTB
+    private static final char SHIFTC
+    private static final char SHIFTD
+    private static final char SHIFTE
+    private static final char TWOSHIFTA
+    private static final char THREESHIFTA
+    private static final char LATCHA
+    private static final char LATCHB
+    private static final char LOCK
+    private static final char ECI
+    private static final char NS
+    private static final char PAD
+    private static final char FS
+    private static final char GS
+    private static final char RS
+    60:61:private DecodedBitStreamParser()
+com.google.zxing.maxicode.decoder.Decoder:
+    private static final int ALL
+    private static final int EVEN
+    private static final int ODD
+    49:49:public com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix)
+com.google.zxing.multi.ByQuadrantReader
+com.google.zxing.multi.GenericMultipleBarcodeReader
+com.google.zxing.multi.MultipleBarcodeReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader$1
+com.google.zxing.multi.qrcode.QRCodeMultiReader$SAComparator
+com.google.zxing.multi.qrcode.detector.MultiDetector
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$1
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$ModuleSizeComparator
+com.google.zxing.oned.CodaBarReader:
+    private static final float MAX_ACCEPTABLE
+    private static final float PADDING
+    private static final java.lang.String ALPHABET_STRING
+    private static final int MIN_CHARACTER_LENGTH
+com.google.zxing.oned.CodaBarWriter
+com.google.zxing.oned.Code128Reader:
+    private static final float MAX_AVG_VARIANCE
+    private static final float MAX_INDIVIDUAL_VARIANCE
+    private static final int CODE_SHIFT
+    private static final int CODE_CODE_C
+    private static final int CODE_CODE_B
+    private static final int CODE_CODE_A
+    private static final int CODE_FNC_1
+    private static final int CODE_FNC_2
+    private static final int CODE_FNC_3
+    private static final int CODE_FNC_4_A
+    private static final int CODE_FNC_4_B
+    private static final int CODE_START_A
+    private static final int CODE_START_B
+    private static final int CODE_START_C
+    private static final int CODE_STOP
+com.google.zxing.oned.Code128Writer
+com.google.zxing.oned.Code39Reader:
+    static final java.lang.String ALPHABET_STRING
+com.google.zxing.oned.Code39Writer
+com.google.zxing.oned.Code93Reader:
+    private static final java.lang.String ALPHABET_STRING
+com.google.zxing.oned.EAN13Writer
+com.google.zxing.oned.EAN8Writer
+com.google.zxing.oned.ITFReader:
+    private static final float MAX_AVG_VARIANCE
+    private static final float MAX_INDIVIDUAL_VARIANCE
+    private static final int W
+    private static final int N
+com.google.zxing.oned.ITFWriter
+com.google.zxing.oned.OneDReader:
+    46:46:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.OneDimensionalCodeWriter
+com.google.zxing.oned.UPCAReader:
+    57:57:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.UPCAWriter
+com.google.zxing.oned.UPCEANReader:
+    private static final float MAX_AVG_VARIANCE
+    private static final float MAX_INDIVIDUAL_VARIANCE
+com.google.zxing.oned.UPCEANWriter
+com.google.zxing.oned.rss.AbstractRSSReader:
+    private static final float MAX_AVG_VARIANCE
+    private static final float MAX_INDIVIDUAL_VARIANCE
+    private static final float MIN_FINDER_PATTERN_RATIO
+    private static final float MAX_FINDER_PATTERN_RATIO
+com.google.zxing.oned.rss.RSSUtils:
+    22:22:private RSSUtils()
+com.google.zxing.oned.rss.expanded.BitArrayBuilder:
+    39:40:private BitArrayBuilder()
+com.google.zxing.oned.rss.expanded.ExpandedPair:
+    53:53:boolean mayBeLast()
+com.google.zxing.oned.rss.expanded.ExpandedRow:
+    47:47:boolean isReversed()
+com.google.zxing.oned.rss.expanded.RSSExpandedReader:
+    private static final int FINDER_PAT_A
+    private static final int FINDER_PAT_B
+    private static final int FINDER_PAT_C
+    private static final int FINDER_PAT_D
+    private static final int FINDER_PAT_E
+    private static final int FINDER_PAT_F
+    private static final int MAX_PAIRS
+    358:358:java.util.List getRows()
+com.google.zxing.oned.rss.expanded.decoders.AI01392xDecoder:
+    private static final int HEADER_SIZE
+    private static final int LAST_DIGIT_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01393xDecoder:
+    private static final int HEADER_SIZE
+    private static final int LAST_DIGIT_SIZE
+    private static final int FIRST_THREE_DIGITS_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI013x0x1xDecoder:
+    private static final int HEADER_SIZE
+    private static final int WEIGHT_SIZE
+    private static final int DATE_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI013x0xDecoder:
+    private static final int HEADER_SIZE
+    private static final int WEIGHT_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01AndOtherAIs:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01decoder:
+    protected static final int GTIN_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AnyAIDecoder:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState:
+    65:65:boolean isNumeric()
+com.google.zxing.oned.rss.expanded.decoders.DecodedChar:
+    static final char FNC1
+com.google.zxing.oned.rss.expanded.decoders.DecodedNumeric:
+    static final int FNC1
+    62:62:int getValue()
+    74:74:boolean isAnyFNC1()
+com.google.zxing.oned.rss.expanded.decoders.FieldParser:
+    190:191:private FieldParser()
+com.google.zxing.pdf417.PDF417Common:
+    public static final int NUMBER_OF_CODEWORDS
+    public static final int MAX_CODEWORDS_IN_BARCODE
+    public static final int MIN_ROWS_IN_BARCODE
+    public static final int MAX_ROWS_IN_BARCODE
+    public static final int MODULES_IN_CODEWORD
+    public static final int MODULES_IN_STOP_PATTERN
+    public static final int BARS_IN_MODULE
+    40:41:private PDF417Common()
+com.google.zxing.pdf417.PDF417Reader:
+    55:55:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+    70:70:public com.google.zxing.Result[] decodeMultiple(com.google.zxing.BinaryBitmap)
+    76:78:public com.google.zxing.Result[] decodeMultiple(com.google.zxing.BinaryBitmap,java.util.Map)
+com.google.zxing.pdf417.PDF417ResultMetadata:
+    30:30:public int getSegmentIndex()
+    38:38:public java.lang.String getFileId()
+    46:46:public int[] getOptionalData()
+    54:54:public boolean isLastSegment()
+com.google.zxing.pdf417.PDF417Writer
+com.google.zxing.pdf417.decoder.BarcodeValue:
+    65:65:public java.lang.Integer getConfidence(int)
+com.google.zxing.pdf417.decoder.Codeword:
+    private static final int BARCODE_ROW_UNKNOWN
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser:
+    private static final int TEXT_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH
+    private static final int NUMERIC_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH_6
+    private static final int ECI_USER_DEFINED
+    private static final int ECI_GENERAL_PURPOSE
+    private static final int ECI_CHARSET
+    private static final int BEGIN_MACRO_PDF417_CONTROL_BLOCK
+    private static final int BEGIN_MACRO_PDF417_OPTIONAL_FIELD
+    private static final int MACRO_PDF417_TERMINATOR
+    private static final int MODE_SHIFT_TO_BYTE_COMPACTION_MODE
+    private static final int MAX_NUMERIC_CODEWORDS
+    private static final int PL
+    private static final int LL
+    private static final int AS
+    private static final int ML
+    private static final int AL
+    private static final int PS
+    private static final int PAL
+    private static final int NUMBER_OF_SEQUENCE_CODEWORDS
+    96:97:private DecodedBitStreamParser()
+com.google.zxing.pdf417.decoder.DetectionResult:
+    private static final int ADJUST_ROW_NUMBER_SKIP
+com.google.zxing.pdf417.decoder.DetectionResultColumn:
+    private static final int MAX_NEARBY_DISTANCE
+com.google.zxing.pdf417.decoder.PDF417CodewordDecoder:
+    47:48:private PDF417CodewordDecoder()
+com.google.zxing.pdf417.decoder.PDF417ScanningDecoder:
+    private static final int CODEWORD_SKEW_SIZE
+    private static final int MAX_ERRORS
+    private static final int MAX_EC_CODEWORDS
+    44:45:private PDF417ScanningDecoder()
+    609:625:public static java.lang.String toString(com.google.zxing.pdf417.decoder.BarcodeValue[][])
+com.google.zxing.pdf417.decoder.ec.ModulusPoly:
+    56:56:int[] getCoefficients()
+    205:227:com.google.zxing.pdf417.decoder.ec.ModulusPoly[] divide(com.google.zxing.pdf417.decoder.ec.ModulusPoly)
+com.google.zxing.pdf417.detector.Detector:
+    private static final float MAX_AVG_VARIANCE
+    private static final float MAX_INDIVIDUAL_VARIANCE
+    private static final int MAX_PIXEL_DRIFT
+    private static final int MAX_PATTERN_DRIFT
+    private static final int SKIPPED_ROW_COUNT_MAX
+    private static final int ROW_STEP
+    private static final int BARCODE_MIN_HEIGHT
+    60:61:private Detector()
+com.google.zxing.pdf417.encoder.BarcodeMatrix
+com.google.zxing.pdf417.encoder.BarcodeRow
+com.google.zxing.pdf417.encoder.Compaction
+com.google.zxing.pdf417.encoder.Dimensions
+com.google.zxing.pdf417.encoder.PDF417
+com.google.zxing.pdf417.encoder.PDF417ErrorCorrection
+com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder
+com.google.zxing.qrcode.QRCodeReader:
+    51:51:protected final com.google.zxing.qrcode.decoder.Decoder getDecoder()
+    64:64:public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.qrcode.QRCodeWriter:
+    private static final int QUIET_ZONE_SIZE
+    44:44:public com.google.zxing.common.BitMatrix encode(java.lang.String,com.google.zxing.BarcodeFormat,int,int)
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser:
+    private static final int GB2312_SUBSET
+    53:54:private DecodedBitStreamParser()
+com.google.zxing.qrcode.decoder.Decoder:
+    45:45:public com.google.zxing.common.DecoderResult decode(boolean[][])
+    60:69:public com.google.zxing.common.DecoderResult decode(boolean[][],java.util.Map)
+    73:73:public com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix)
+com.google.zxing.qrcode.decoder.FormatInformation:
+    private static final int FORMAT_INFO_MASK_QR
+com.google.zxing.qrcode.decoder.QRCodeDecoderMetaData:
+    39:39:public boolean isMirrored()
+com.google.zxing.qrcode.detector.Detector:
+    49:49:protected final com.google.zxing.common.BitMatrix getImage()
+    53:53:protected final com.google.zxing.ResultPointCallback getResultPointCallback()
+    64:64:public com.google.zxing.common.DetectorResult detect()
+com.google.zxing.qrcode.detector.FinderPatternFinder:
+    private static final int CENTER_QUORUM
+    protected static final int MIN_SKIP
+    protected static final int MAX_MODULES
+    58:59:public FinderPatternFinder(com.google.zxing.common.BitMatrix)
+    69:69:protected final com.google.zxing.common.BitMatrix getImage()
+    73:73:protected final java.util.List getPossibleCenters()
+com.google.zxing.qrcode.encoder.ByteMatrix:
+    57:58:public void set(int,int,byte)
+com.google.zxing.qrcode.encoder.Encoder:
+    static final java.lang.String DEFAULT_BYTE_MODE_ENCODING
+    52:53:private Encoder()
+    72:72:public static com.google.zxing.qrcode.encoder.QRCode encode(java.lang.String,com.google.zxing.qrcode.decoder.ErrorCorrectionLevel)
+    176:176:public static com.google.zxing.qrcode.decoder.Mode chooseMode(java.lang.String)
+com.google.zxing.qrcode.encoder.MaskUtil:
+    private static final int N1
+    private static final int N2
+    private static final int N3
+    private static final int N4
+    32:34:private MaskUtil()
+com.google.zxing.qrcode.encoder.MatrixUtil:
+    private static final int VERSION_INFO_POLY
+    private static final int TYPE_INFO_POLY
+    private static final int TYPE_INFO_MASK_PATTERN
+    30:32:private MatrixUtil()
+com.google.zxing.qrcode.encoder.QRCode:
+    public static final int NUM_MASK_PATTERNS
+    42:42:public com.google.zxing.qrcode.decoder.Mode getMode()
+    46:46:public com.google.zxing.qrcode.decoder.ErrorCorrectionLevel getECLevel()
+    50:50:public com.google.zxing.qrcode.decoder.Version getVersion()
+    54:54:public int getMaskPattern()
+com.haarman.listviewanimations.ArrayAdapter
+com.haarman.listviewanimations.BaseAdapterDecorator:
+    129:129:public android.widget.BaseAdapter getDecoratedBaseAdapter()
+com.haarman.listviewanimations.itemmanipulation.AnimateDismissAdapter
+com.haarman.listviewanimations.itemmanipulation.AnimateDismissAdapter$1
+com.haarman.listviewanimations.itemmanipulation.AnimateDismissAdapter$2
+com.haarman.listviewanimations.itemmanipulation.AnimateDismissAdapter$3
+com.haarman.listviewanimations.itemmanipulation.OnDismissCallback
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissAdapter
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissListViewTouchListener
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissListViewTouchListener$1
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissListViewTouchListener$2
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissListViewTouchListener$3
+com.haarman.listviewanimations.itemmanipulation.SwipeDismissListViewTouchListener$PendingDismissData
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter$DeleteItemCallback
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter$RecycleViewListener
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter$RemoveViewAnimatorListenerAdapter
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter$RemoveViewAnimatorUpdateListener
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoAdapter$UndoListener
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoListViewTouchListener
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoListViewTouchListener$1
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoListViewTouchListener$2
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoListViewTouchListener$Callback
+com.haarman.listviewanimations.itemmanipulation.contextualundo.ContextualUndoView:
+    private android.view.View mUndoView
+    32:34:public ContextualUndoView(android.content.Context,int)
+    37:39:private void initUndo(int)
+    42:46:public void updateContentView(android.view.View)
+    61:61:public boolean isContentDisplayed()
+    65:67:public void displayUndo()
+    70:72:public void displayContentView()
+com.haarman.listviewanimations.swinginadapters.AnimationAdapter:
+    protected static final long DEFAULTANIMATIONDELAYMILLIS
+    protected static final long DEFAULTANIMATIONDURATIONMILLIS
+    private static final long INITIALDELAYMILLIS
+    65:72:public void reset()
+com.haarman.listviewanimations.swinginadapters.ResourceAnimationAdapter
+com.haarman.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter
+com.haarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter:
+    40:41:public SwingBottomInAnimationAdapter(android.widget.BaseAdapter,long)
+com.haarman.listviewanimations.swinginadapters.prepared.SwingLeftInAnimationAdapter:
+    40:41:public SwingLeftInAnimationAdapter(android.widget.BaseAdapter,long)
+com.haarman.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter

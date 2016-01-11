@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="local_app_name">语音控</string>
+    <string name="action_settings">Settings</string>
+    <string name="started">启动service</string>
+    <string name="application_name">请输入你想操作的应用程序名</string>
+    <string name="startApp">启动应用</string>
+    <string name="searchApp">搜索应用</string>
+    <string name="deleteChat">删除对话</string>
+    <string name="title_listApps">查看应用</string>
+    <string name="uninstallApp">卸载应用</string>
+    <string name="scanQCode">扫一扫</string>
+    <string name="tips_setHead">亲，改用头像时，最好选用图库中的照片进行裁剪哦！</string>
+
+    <!-- 操作应用的action -->
+    <string name="open">打开</string>
+    <string name="remove">移除</string>
+    <string name="launch">启动</string>
+    <string name="login">登录</string>
+    <string name="close">关闭</string>
+    <string name="exit">退出</string>
+    <string name="returnToHome">返回主页</string>
+    <string name="returnToHomePage">返回首页</string>
+    <string name="backToHome">回到主页</string>
+    <string name="backToHomePage">回到首页</string>
+    <string name="search">搜索</string>
+    <string name="uninstall">卸载</string>
+
+    <!-- 科大讯飞语音SDK -->
+    <string name="iflyteck_app_id">53674a76</string>
+
+    <!-- 语音提示 -->
+    <string name="ServiceUser">正在为您</string>
+    <string name="Recognizing">识别中...</string>
+    <string name="SearchFail">对不起，没有找到您说的应用</string>
+    <string name="RecognizeError">识别结果不正确。</string>
+    <string name="DoNotKnow">不会不会，惭愧惭愧！</string>
+    <string name="CancelRecognize">取消识别</string>
+    <string name="CatchException">大侠饶命，在下真的不知！</string>
+    <string name="DoNotInstallAPP">对不起，您还没安装该应用！</string>
+    <string name="packageDoNotExit">对不起，您的手机还没安装该应用！</string>
+    <string name="startSpeech">请开始说话！</string>
+
+    <!-- 语音转文本提示 -->
+    <string name="service_call">拨打%1$s的电话%2$s</string>
+    <string name="service_sms">打开编辑短信页面。</string>
+    <string name="query_weather">查询天气状况，请稍等......</string>
+
+    <!-- 异常提示 -->
+    <string name="ParseError">解析的结果为null或空值。</string>
+    <string name="NetworkConnectionException">对不起，您的手机未连接网络，无法进行网络搜索，请检查您的网络环境！</string>
+    <string name="ServerException">对不起，服务器异常！</string>
+    <string name="InvalidRequest">无效请求，您提交的参数有误！</string>
+    <string name="SemanticParsingError">语义解析出错！</string>
+    <string name="text_login_fail">登录失败</string>
+    <string name="checkSDcard">请检查您的SD卡是否已安装！</string>
+    <string name="HasntTheNumber">对不起，您还没有这个联系人的号码！</string>
+    <string name="TextIsNull">对不起，我没听懂您的意思，请再说一遍！</string>
+
+    <!-- 过滤字符串 -->
+    <string name="station">台</string>
+    <string name="channel">频道</string>
+    <string name="TV">卫视</string>
+    <string name="CCTV">CCTV</string>
+
+    <!-- 搜索界面 -->
+    <string name="searchHistory">最近搜过</string>
+    <string name="topSearch">热门搜索</string>
+    <string name="clearHistory">清除历史记录</string>
+    <string name="isSureClearHistory">确定要清除历史记录吗？</string>
+    <string name="searchHint">输入您想说的话</string>
+    <!-- 热门搜索 -->
+    <string-array name="searchTop">
+        <item>今天天气怎么样</item>
+        <item>讲个笑话给我听</item>
+        <item>帮我打开QQ</item>
+        <item>帮我搜一下芈月传</item>
+        <item>3乘以18等于几</item>
+        <item>我现在在哪里</item>
+        <item>你知道深圳在哪里吗？</item>
+        <item>世界之窗到老街怎么走</item>
+    </string-array>
+
+    <!-- 常用 -->
+    <string name="xiaoyan">小助手</string>
+    <string name="me">用户</string>
+    <string name="title_activity_recognize_dialog">RecognizeDialogActivity</string>
+    <string name="searchPackage">该应用的包名为：</string>
+    <string name="IncorrectName">请输入正确的应用程序名！</string>
+    <string name="title_activity_list_apps">我的应用</string>
+    <string name="packageName">包名</string>
+    <string name="appName">应用程序名</string>
+    <string name="WhatDoYouDo">您打算怎么处置它？</string>
+    <string name="setHeadImage">设置头像</string>
+    <string name="setUserHead">设置您的头像</string>
+    <string name="setRobotHead">设置语音机器人头像</string>
+    <string name="title_activity_show_help">MainActivity</string>
+    <string name="extra_subject">分享</string>
+    <string name="extra_text">由宁哥亲手打造的一款软件，非常好用哦！</string>
+    <string name="share">分享</string>
+    <string name="aboutAuthorTitle">关于作者</string>
+    <string name="clickAgainToExitApp">再按一次退出程序！</string>
+    <string name="aboutAuthor">\t\t\t本应用是由邓耀宁同学开发的语音应用，具体操作请查看帮助；
+        \n\n\t\t\t关于广告的声明：在主界面的顶端为显示广告的部分，广告作为本人开发软件的经费来源；如果您支持我，就请点击下载安装（广告的软件源自豌豆荚，放心使用）；
+                    如果您仅仅为了支持我同时也不喜欢广告的软件，请下载安装之后再进行卸载；
+        \n\n版权由邓耀宁所有，违者必究。</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+    <string name="title_activity_my_intent_tab">MyIntentTab</string>
+    <string name="cancel">取消</string>
+    <string name="Continue">继续</string>
+    <string name="sure">确定</string>
+    <string name="wifi_message">\t\t\t您的手机尚未连接WIFI，使用分享功能会耗费您不少的流量；建议先连接WIFI，再进行分享。\n\n是否继续执行分享功能？</string>
+    <string name="share_everything">选择您想分享的东西</string>
+    <string name="share_myApp">分享本应用</string>
+    <string name="knowMore">了解更多功能请点击左上方的菜单键或是向右滑动！</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="notification_ticker">您可以在通知栏打开语音控</string>
+    <string name="notification_text">点击此处即可打开语音控</string>
+
+    <!-- 天气相关 -->
+    <string name="week">星期%1$s</string>
+    <string name="temperature">%1$sºC</string>
+    <string name="today">今天</string>
+    <string name="item_monday">星期一</string>
+    <string name="item_tuesday">星期二</string>
+    <string name="item_wednesday">星期三</string>
+    <string name="item_thursday">星期四</string>
+    <string name="item_friday">星期五</string>
+    <string name="item_saturday">星期六</string>
+    <string name="item_sunday">星期日</string>
+    <string name="theme_wind">风力:</string>
+    <string name="theme_windDirection">风向:</string>
+    <string name="theme_humidity">相对湿度:</string>
+    <string name="searching">正在查询...</string>
+    <string name="err_search_weather_fail">天气查询发生错误，请检查网络是否通畅。</string>
+    <string name="app_declare">语音查询天气命令：\n\n
+        1. [城市名]的天气. 查询指定城市的当天天气。\n\n
+        2. [城市名][明天/后天]的天气. 查询指定城市明天或者后天的天气。\n\n
+        3. [城市名][日期]的天气. 查询指定城市指定日期的天气。\n\n
+        ps. [城市名]省略时则默认查询城市为设备所在城市.\n </string>
+    <string name="weather_condition_0">龙卷风</string>
+    <string name="weather_condition_1">热带风暴</string>
+    <string name="weather_condition_2">飓风</string>
+    <string name="weather_condition_3">强雷暴</string>
+    <string name="weather_condition_4">雷暴</string>
+    <string name="weather_condition_5">混合雨雪</string>
+    <string name="weather_condition_6">混合雨和雨夹雪</string>
+    <string name="weather_condition_7">混合雪和雨夹雪</string>
+    <string name="weather_condition_8">冷冻小雨</string>
+    <string name="weather_condition_9">小雨</string>
+    <string name="weather_condition_10">冻雨</string>
+    <string name="weather_condition_11">阵雨</string>
+    <string name="weather_condition_12">阵雨</string>
+    <string name="weather_condition_13">雪阵</string>
+    <string name="weather_condition_14">光阵雪</string>
+    <string name="weather_condition_15">高吹雪</string>
+    <string name="weather_condition_16">雪</string>
+    <string name="weather_condition_17">冰雹</string>
+    <string name="weather_condition_18">雨夹雪</string>
+    <string name="weather_condition_19">灰尘</string>
+    <string name="weather_condition_20">雾</string>
+    <string name="weather_condition_21">阴霾</string>
+    <string name="weather_condition_22">烟熏</string>
+    <string name="weather_condition_23">大风</string>
+    <string name="weather_condition_24">多风</string>
+    <string name="weather_condition_25">冷</string>
+    <string name="weather_condition_26">多云</string>
+    <string name="weather_condition_27">多云（夜）</string>
+    <string name="weather_condition_28">阴天（日）</string>
+    <string name="weather_condition_29">多云（夜）</string>
+    <string name="weather_condition_30">多云（日）</string>
+    <string name="weather_condition_31">清（夜）</string>
+    <string name="weather_condition_32">阳光明媚</string>
+    <string name="weather_condition_33">晴朗（夜）</string>
+    <string name="weather_condition_34">晴朗（天）</string>
+    <string name="weather_condition_35">混合雨和冰雹</string>
+    <string name="weather_condition_36">热</string>
+    <string name="weather_condition_37">局部地区性雷暴</string>
+    <string name="weather_condition_38">零星雷阵雨</string>
+    <string name="weather_condition_39">零星雷阵雨</string>
+    <string name="weather_condition_40">零星阵雨</string>
+    <string name="weather_condition_41">大雪</string>
+    <string name="weather_condition_42">零星阵雪</string>
+    <string name="weather_condition_43">大雪</string>
+    <string name="weather_condition_44">多云</string>
+    <string name="weather_condition_45">雷阵雨</string>
+    <string name="weather_condition_46">阵雪</string>
+    <string name="weather_condition_47">隔离雷阵雨</string>
+    <string name="weather_condition_3200">不可知</string>
+
+    <!-- 天气错误码 -->
+    <string-array name="weather_errorCode">
+        <item>207301,错误的查询城市名</item>
+        <item>207302,查询不到该城市的相关信息</item>
+        <item>207303,网络错误，请重试</item>
+        <item>10001,错误的请求KEY</item>
+        <item>10002,该KEY无请求权限</item>
+        <item>10003,KEY过期</item>
+        <item>10004,错误的OPENID</item>
+        <item>10005,应用未审核超时，请提交认证</item>
+        <item>10007,未知的请求源</item>
+        <item>10009,被禁止的KEY</item>
+        <item>10011,当前IP请求超过限制</item>
+        <item>10012,请求超过次数限制</item>
+        <item>10013,测试KEY超过请求限制</item>
+        <item>10014,系统内部异常，请重试</item>
+        <item>10020,接口维护</item>
+        <item>10021,接口停用</item>
+    </string-array>
+
+    <!-- 更多设置 -->
+    <string name="title_settings">设置</string>
+    <string name="title_voice_setting">语音设置</string>
+    <string name="setNotifications">消息提醒设置</string>
+    <string name="showPic">是否仅在Wi-Fi下显示图片</string>
+    <string name="inviteFriends">邀请好友使用</string>
+    <string name="evaluate">为我点评一下吧</string>
+    <string name="update">检查更新</string>
+    <string name="clearCache">清除缓存%1$s</string>
+    <string name="title_activity_share">ShareActivity</string>
+
+    <!-- 邀请好友界面 -->
+    <string name="title_inviteFriends">邀请好友</string>
+    <string name="inviteFriendsTips">亲，你还可以邀请您的好友扫描下图的二维码，直接下载本应用哦！</string>
+
+    <!-- 关于语音控 -->
+    <string name="title_help">使用帮助</string>
+    <string name="title_about">关于语音控</string>
+    <string name="current_version">当前版本:%1$s</string>
+    <string name="third_part_sdk">第三方SDK说明</string>
+    <string name="attention">关注开发者账号</string>
+
+    <!-- 地图 -->
+
+
+    <!-- 地图路径规划和导航 -->
+    <string name="map_route_title_loading">正在规划路线，请稍等...</string>
+    <string name="map_route_title_driving">当前是驾车路线</string>
+    <string name="map_route_title_transiting">当前是换乘路线</string>
+    <string name="map_route_title_walking">当前是步行路线</string>
+    <string name="map_route_startNode">您要找的起点是：</string>
+    <string name="map_route_endNode">您要找的终点是：</string>
+    <string name="map_route_result_not_found">抱歉，未找到结果!</string>
+    <string name="map_route_navi_init_succeed">百度导航引擎初始化成功!</string>
+    <string name="map_route_navi_start">百度导航引擎初始化开始!</string>
+    <string name="map_route_navi_init_fail">百度导航引擎初始化失败!</string>
+    <string name="map_route_navi_uninit">百度导航引擎尚未初始化！</string>
+    <string name="map_route_navi_startNode_is_null">导航开始节点信息为空！</string>
+    <string name="map_route_navi_endNode_is_null">导航结束节点信息为空！</string>
+    <string name="map_route_navi_fail">导航算路失败！</string>
+    <string name="map_route_navi_key_correct">百度导航引擎key校验成功!</string>
+    <string name="map_route_navi_key_incorrect">百度导航引擎key校验失败</string>
+    <string name="map_route_price">打车%1$s元</string>
+    <string name="map_route_time">%1$s分钟</string>
+    <string name="map_route_distance">%1$s公里</string>
+    <string name="map_route_lines">查看%1$s条路线</string>
+    <string name="map_route_lines_details">路线%1$s：</string>
+
+    <!-- 地图路径规划异常信息 -->
+    <string name="AMBIGUOUS_KEYWORD">检索词有岐义</string>
+    <string name="AMBIGUOUS_ROURE_ADDR">检索地址有岐义</string>
+    <string name="KEY_ERROR">key有误</string>
+    <string name="NETWORK_ERROR">网络错误</string>
+    <string name="NETWORK_TIME_OUT">网络超时</string>
+    <string name="NO_ERROR"> 检索结果正常返回</string>
+    <string name="NOT_SUPPORT_BUS">该城市不支持公交搜索</string>
+    <string name="NOT_SUPPORT_BUS_2CITY">不支持跨城市公交</string>
+    <string name="PERMISSION_UNFINISHED">授权未完成</string>
+    <string name="RESULT_NOT_FOUND">没有找到检索结果</string>
+    <string name="ST_EN_TOO_NEAR">起终点太近</string>
+
+    <!-- 语音设置 -->
+    <string name="setting_voice_speakEnable">是否开启语音合成</string>
+    <string name="setting_voice_language">语言设置</string>
+    <string name="setting_voice_speaker">语音播放者</string>
+    <string name="setting_voice_interruptMusic">播放语音时，是否打断音乐播放</string>
+
+    <!-- 语音播放者 -->
+    <string-array name="voicer_cloud_entries">
+        <item>小艾—女青、中英、普通话、支持情感</item>
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>aisxa</item>
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+
+    <string name="title_activity_scan_qrcode">ScanQRCodeActivity</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+</resources>

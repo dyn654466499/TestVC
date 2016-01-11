@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue" >
+
+        <ImageButton
+            android:id="@+id/imageBtn_voicesetting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/imagebtn_back_left"
+            android:background="@null"
+            android:src="@drawable/icon_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_voice_setting"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_voicesetting_voiceEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_selector_frame"
+            android:drawableRight="@drawable/component_in_use"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/setting_voice_speakEnable"
+            android:textColor="#545454"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_voicesetting_voiceEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_frame_nomal"
+            android:divider="@drawable/line"
+            android:orientation="vertical"
+            android:paddingBottom="1px"
+            android:paddingTop="1px"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/button_voicesetting_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selector"
+                android:drawableRight="@drawable/daren_middle_more"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/setting_voice_language"
+                android:textColor="#545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_voicesetting_speaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selector"
+                android:drawableRight="@drawable/daren_middle_more"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/setting_voice_speaker"
+                android:textColor="#545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_voicesetting_interruptMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selector"
+                android:drawableRight="@drawable/component_in_use"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:tag="in_use"
+                android:text="@string/setting_voice_interruptMusic"
+                android:textColor="#545454"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

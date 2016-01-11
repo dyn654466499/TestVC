@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/climate_background"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <!-- today weather -->
+
+    <RelativeLayout
+        android:id="@+id/top_div"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1.8"
+        android:background="#80101010"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dip"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/time_loc_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/today"
+                android:textColor="#F0F0F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/current_date"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/current_date"
+                android:text="--:--"
+                android:textColor="#F0F0F0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/today_cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_date"
+                android:layout_marginTop="5dp"
+                android:text="深圳"
+                android:textColor="#F0F0F0"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/today_div_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_loc_div"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/today_weather_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="晴"
+                android:textColor="#F0F0F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/today_weather_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/today_weather_text"
+                android:text="20ºC"
+                android:textColor="#F0F0F0"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/today_div_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/time_loc_div"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/theme_windDirection"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_windDirection"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_weather_windDirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="东北风"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/theme_wind"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_wind"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_weather_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-4级"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/theme_humidity"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_humidity"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--%"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- weekly weather -->
+
+    <RelativeLayout
+        android:id="@+id/div_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="3" >
+
+        <com.dyn.customview.HorizontalListView
+            android:id="@+id/horizon_list_weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.dyn.customview.HorizontalListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/div_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

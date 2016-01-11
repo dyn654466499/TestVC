@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>  
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        >  
+        
+        <ImageView 
+            android:id="@+id/icon" 
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center"/>  
+            
+        <LinearLayout android:orientation="vertical"  
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            >
+              
+        <TextView 
+            android:id="@+id/listapp_item_appName" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:text="语音控制"
+            android:textSize="16sp"/>  
+          
+        <TextView 
+            android:id="@+id/listapp_item_version" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textColor="@color/font_gray"
+            android:text="2.0.1"
+            android:textSize="13sp"/>
+                
+                
+        <TextView 
+            android:id="@+id/listapp_item_packageName" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="com.dyn.voicecontrol"
+            android:textColor="@color/font_gray"
+            android:scrollHorizontally="true"
+            android:textSize="13sp"/>  
+            
+        
+        </LinearLayout>  
+        
+    </LinearLayout>  

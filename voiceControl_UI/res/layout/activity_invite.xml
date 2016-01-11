@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dyn.voicecontrol.ShareActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_inviteFriends"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_title" />
+
+        <ImageButton
+            android:id="@+id/imageButton_invite_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/imagebtn_back_left"
+            android:background="@null"
+            android:src="@drawable/icon_title_back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/bg_gray" 
+        android:padding="20dp"
+        >
+
+        <Button
+            android:id="@+id/button_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/bg_selector_frame"
+            android:text="@string/inviteFriends" 
+            android:textColor="@color/blue"
+            />
+
+        <!-- 二维码显示 -->
+        <TextView
+            android:id="@+id/textView_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_invite"
+            android:layout_below="@+id/button_invite"
+            android:layout_marginTop="28dp"
+            android:text="@string/inviteFriendsTips"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView_invite_QRCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_invite"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:src="@drawable/voice_stop" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

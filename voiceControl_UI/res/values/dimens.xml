@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 用户中心 -->
+	<dimen name="user_center_text_size">20sp</dimen>
+	<dimen name="user_layout_margin">16dp</dimen>
+	
+	<!-- 界面标题 -->
+	<dimen name="text_title">20sp</dimen>
+	<dimen name="imagebtn_back_left">8dp</dimen>
+	
+	<!-- 商品详情界面 -->
+	<dimen name="goods_detail_params">15sp</dimen>
+	
+</resources>

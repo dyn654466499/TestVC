@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_listapps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue" >
+
+        <ImageButton
+            android:id="@+id/imageBtn_listapps_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/imagebtn_back_left"
+            android:background="@null"
+            android:src="@drawable/icon_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_listApps"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_listApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" >
+
+        <ListView
+            android:id="@+id/listView_listApps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

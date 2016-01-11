@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dyn.voicecontrol"
+    android:versionCode="1"
+    android:versionName="2.0.1" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    
+    
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/control"
+        android:label="@string/local_app_name"
+        android:sharedUserId="android.uid.system"
+        android:theme="@style/AppTheme" 
+        android:hardwareAccelerated="true">
+        <!-- 百度地图Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="LEo9cw2t83gfzoEz33iAL8OY" />
+        
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="48ae76de3f" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.dyn.activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@drawable/control"
+            android:label="@string/local_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.send" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!--
+        <receiver android:name="com.dyn.activities.MainActivity$InstalledReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 语音识别对话框 -->
+        <activity
+            android:name="com.dyn.activities.RecognizeDialogActivity"
+            android:label="@string/title_activity_recognize_dialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!-- 查看应用 -->
+        <activity
+            android:name="com.dyn.activities.ListAppsActivity"
+            android:label="@string/title_activity_list_apps"
+            android:screenOrientation="portrait" />
+
+        <!-- 帮助 -->
+        <activity
+            android:name="com.dyn.activities.ShowHelpActivity"
+            android:label="@string/title_activity_show_help"
+            android:screenOrientation="portrait" />
+
+        <!-- 天气 -->
+        <activity
+            android:name="com.dyn.activities.WeatherActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_show_help"
+            android:screenOrientation="landscape" />
+
+        <!-- 邀请好友使用 -->
+        <activity
+            android:name="com.dyn.activities.InviteFriendActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享 -->
+        <activity
+            android:name="com.dyn.activities.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTransparent" />
+
+        <!-- 文本转语义 -->
+        <activity
+            android:name="com.dyn.activities.SearchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置 -->
+        <activity
+            android:name="com.dyn.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- poi搜索 -->
+        <activity
+            android:name="com.dyn.activities.POISearchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 地图界面 -->
+        <activity
+            android:name="com.dyn.activities.MapActivity"
+            android:screenOrientation="portrait" 
+            />
+
+        <!-- 关于 -->
+        <activity
+            android:name="com.dyn.activities.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- QQSDK -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105027590" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 显示导航界面 -->
+        <activity
+            android:name="com.dyn.activities.NavigationActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+
+        <!-- 语音设置界面 -->
+        <activity
+            android:name="com.dyn.activities.VoiceSettingActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        
+        <!-- web界面 -->
+        <activity
+            android:name="com.dyn.activities.WebActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <!-- 二维码扫描界面 -->
+        <activity
+            android:name="com.dyn.activities.QRCodeCaptureActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" 
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.dyn.category.captrue"/>
+            </intent-filter>
+          </activity>  
+          
+        
+        <!-- push service start -->
+        <!-- Push 服务  -->
+        <service
+            android:name="com.iflytek.pushclient.manager.PushService"
+            android:exported="true"
+            android:process=":xpush"></service>
+        <!--  用于接收系统消息以保证PushService正常运行  -->
+        <receiver
+            android:name="com.iflytek.pushclient.manager.PushServiceReceiver"
+            android:process=":xpush">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.iflytek.pushclient.action.notification.SHOW" />
+            </intent-filter>
+        </receiver><!-- Push服务接收客户端发送的各种请求 -->
+        <receiver
+            android:name="com.iflytek.pushclient.manager.RegistrationReceiver"
+            android:process=":xpush" >
+            <intent-filter>
+                <action android:name="com.iflytek.pushclient.action.METHOD" />
+                <action android:name="com.iflytek.pushclient.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 科大讯飞appid -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'53674a76'" />
+        <!-- app对应的渠道号(非必填) -->
+        <!--<meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="Android_Demo" />
+            -->
+        <!-- push service end -->
+   
+   <!-- 客户端的推送接收者 -->     
+<receiver android:name="com.dyn.recievers.IflytekPushReceiver" >
+    <intent-filter>
+        <!-- 接收 push消息 -->
+        <action android:name="com.iflytek.pushclient.action.MESSAGE" />
+        <!-- 接收 bind、unbind等method 的返回结果 -->
+        <action android:name="com.iflytek.pushclient.action.RECEIVE" />
+        <!-- 可选。接受通知点击事件,删除事件和通知自定义内容 -->
+        <action android:name="com.iflytek.pushclient.action.notification.CLICK" />
+        <action android:name="com.iflytek.pushclient.action.notification.DELETE" />
+    </intent-filter>
+</receiver>
+
+        <!-- 讯飞自动更新功能 -->   
+        <activity android:name="com.iflytek.autoupdate.IFlytekUpdateDialog"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" 
+            >
+        </activity>
+        
+        <!-- 下载基础服务 -->
+        <service
+            android:name="com.iflytek.autoupdate.IFlytekDownloadService"
+            android:enabled="true"
+			android:process=":IFlytekDownloadService" />
+        
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

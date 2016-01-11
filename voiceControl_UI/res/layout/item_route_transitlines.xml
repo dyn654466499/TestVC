@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/textView_route_lines_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="路线一："
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView_route_lines_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView_route_lines_num"
+        android:layout_alignBaseline="@id/textView_route_lines_num"
+        android:text="内容"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_route_lines_num"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView_route_lines_num" >
+
+        <TextView
+            android:id="@+id/textView_route_lines_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:drawableLeft="@drawable/navigation_transit_time"
+            android:minWidth="100dp"
+            android:singleLine="true"
+            android:text="时间"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_deep_gray"
+            android:textSize="13sp" />
+        
+        <TextView
+            android:id="@+id/textView_route_lines_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:drawableLeft="@drawable/navigation_transit_distance"
+            android:singleLine="true"
+            android:minWidth="100dp"
+            android:text="距离"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_deep_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_route_lines_walkDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:minWidth="100dp"
+            android:layout_gravity="center_vertical|right"
+            android:drawableLeft="@drawable/navigation_transit_walkdistance"
+            android:singleLine="true"
+            android:text="步行"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_deep_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_gray"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

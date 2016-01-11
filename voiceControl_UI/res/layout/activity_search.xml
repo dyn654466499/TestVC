@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" 
+    tools:context="com.ourwork.flowmonitor.SearchActivity" >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" 
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4" >
+
+                    <TextView
+                        android:id="@+id/textView_search_topSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/topSearch"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <com.dyn.customview.GridViewForScrollView
+                        android:id="@+id/gridView_search_topSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView_search_topSearch"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_frame_nomal"
+                        android:numColumns="2"
+                        android:paddingBottom="1px"
+                        android:paddingTop="1px"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dp" >
+                    </com.dyn.customview.GridViewForScrollView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_search_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_search_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="@string/searchHistory"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9" >
+
+                        <com.dyn.customview.ListViewForScrollView
+                            android:id="@+id/listView_search_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/layout_frame_nomal"
+                            android:divider="@drawable/line"
+                            android:dividerHeight="1dp"
+                            android:paddingTop="1px" >
+                        </com.dyn.customview.ListViewForScrollView>
+
+                        <Button
+                            android:id="@+id/button_search_clearHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/listView_search_history"
+                            android:background="@drawable/bg_selector_frame"
+                            android:gravity="center"
+                            android:text="@string/clearHistory"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/editext_frame"
+            android:orientation="horizontal" >
+
+            <com.dyn.customview.CustomEditText
+                android:id="@+id/editText_search_goods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="9"
+                android:background="@drawable/editext_frame"
+                android:drawableLeft="@drawable/cityselect_search_icon"
+                android:drawableRight="@drawable/submit_edit_clear_pressed"
+                android:hint="@string/searchHint"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" >
+            </com.dyn.customview.CustomEditText>
+
+            <Button
+                android:id="@+id/button_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="#2c92ef"
+                android:text="@string/search"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+

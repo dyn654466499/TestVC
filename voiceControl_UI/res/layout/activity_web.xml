@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dyn.activities.QRCodeCaptureActivity" >
+
+    <LinearLayout
+        android:id="@+id/relativeLayout_web_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/blue" >
+
+        <ImageButton
+            android:id="@+id/ImageBtn_web_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/icon_title_back" />
+
+        <TextView
+            android:id="@+id/textView_web_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title" />
+
+        <ImageButton
+            android:id="@+id/imageBtn_web_refresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/icon_web_refresh" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" >
+
+        <com.dyn.customview.ProgressWebView
+            android:id="@+id/webView_web_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

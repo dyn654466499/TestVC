@@ -1,0 +1,2 @@
+.这个点代表当前路径
+在apk的根路径下，输入java -jar ApkCompress.jar -a ./XXX.apk(XXX是apk的名字) -k ./key名字  密码  alias的密码 alias的名字

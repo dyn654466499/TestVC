@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.9"
+    >
+
+    <RelativeLayout 
+        android:id="@+id/week_item_rl"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+    	android:padding="7dp"
+    	android:background="#80101010">
+    	
+	    <TextView
+	        android:id="@+id/week_item_week"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="false"
+	        android:layout_marginBottom="2dip"
+	        android:textColor="@color/gray"
+	        android:text="Monday"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/week_item_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/week_item_week"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="false"
+	        android:layout_marginBottom="2dip"
+	        android:textColor="@color/gray"
+	        android:textSize="14sp"
+	        android:text="6/10" />
+	
+	    <TextView
+	        android:id="@+id/week_item_nongli"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/week_item_date"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="false"
+	        android:layout_marginBottom="2dip"
+	        android:textColor="@color/gray"
+	        android:text="农历" 
+	        android:textSize="12sp"/>
+	
+	    <ImageView
+	        android:id="@+id/weather_icon"
+	        android:layout_width="70dp"
+	        android:layout_height="60dp"
+	        android:layout_below="@id/week_item_nongli"
+	        android:layout_marginBottom="1dip"
+	        android:layout_centerHorizontal="true" />
+	    
+	     <TextView
+	        android:id="@+id/week_item_weather"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/weather_icon"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="false"
+	        android:textColor="@color/gray"
+	        android:text="多云"
+	        android:textSize="14sp"/>
+	     
+	    <TextView
+	        android:id="@+id/week_item_temperature"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/week_item_weather"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="false"
+	        android:textColor="@color/gray"
+	        android:text="30/35"
+	        android:textSize="14sp"/>
+	    
+	</RelativeLayout>
+    
+</RelativeLayout>

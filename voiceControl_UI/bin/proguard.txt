@@ -1,0 +1,110 @@
+# view res/layout/activity_guide.xml #generated:14
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.dyn.activities.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.dyn.activities.InviteFriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.dyn.activities.ListAppsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.dyn.activities.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.dyn.activities.MapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.dyn.activities.NavigationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.dyn.activities.POISearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:225
+-keep class com.dyn.activities.QRCodeCaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.dyn.activities.RecognizeDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class com.dyn.activities.SearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.dyn.activities.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+-keep class com.dyn.activities.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.dyn.activities.ShowHelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.dyn.activities.VoiceSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.dyn.activities.WeatherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.dyn.activities.WebActivity { <init>(...); }
+
+# view res/layout/activity_route.xml #generated:71
+-keep class com.dyn.customview.AlwaysMarqueeTextView { <init>(...); }
+
+# view res/layout/item_chatting_msg_text_left.xml #generated:30
+# view res/layout/item_chatting_msg_text_right.xml #generated:29
+-keep class com.dyn.customview.CircleImageView { <init>(...); }
+
+# view res/layout/activity_search.xml #generated:109
+-keep class com.dyn.customview.CustomEditText { <init>(...); }
+
+# view res/layout/activity_search.xml #generated:37
+-keep class com.dyn.customview.GridViewForScrollView { <init>(...); }
+
+# view res/layout/activity_weather.xml #generated:182
+-keep class com.dyn.customview.HorizontalListView { <init>(...); }
+
+# view res/layout/activity_search.xml #generated:77
+-keep class com.dyn.customview.ListViewForScrollView { <init>(...); }
+
+# view res/layout/activity_web.xml #generated:51
+-keep class com.dyn.customview.ProgressWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:281
+-keep class com.dyn.recievers.IflytekPushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.dyn.voicecontrol.MyApplication { <init>(...); }
+
+# view res/layout/activity_qrcode_capture.xml #generated:57
+-keep class com.dyn.zxing.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.iflytek.autoupdate.IFlytekDownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.iflytek.autoupdate.IFlytekUpdateDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:241
+-keep class com.iflytek.pushclient.manager.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:246
+-keep class com.iflytek.pushclient.manager.PushServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:255
+-keep class com.iflytek.pushclient.manager.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# onClick res/layout/activity_route.xml #generated:155
+# onClick res/layout/activity_route.xml #generated:165
+-keepclassmembers class * { *** nodeClick(...); }
+
