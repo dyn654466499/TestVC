@@ -76,6 +76,7 @@ public class WeatherModel extends BaseModel{
 		switch (changeStateMessage.what) {
 		case MODEL_WEATHER_QUERY:
 			ArrayList<String> list = (ArrayList<String>)changeStateMessage.obj;
+			if(list!=null && list.size()>1){
 			searchDate = list.get(1);
 			
 			String city = "";
@@ -87,6 +88,9 @@ public class WeatherModel extends BaseModel{
 			
 			Object info = parseJson(result);
 			Message.obtain(handler, VIEW_WEATHER_QUERY, searchIndex,-1,info).sendToTarget();
+			}else{
+				Message.obtain(handler, VIEW_WEATHER_QUERY, searchIndex,-1,"未知错误").sendToTarget();
+			}
 			break;
 
 		default:

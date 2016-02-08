@@ -23,7 +23,7 @@
 -libraryjars libs/IndoorscapeAlbumPlugin.jar
 -libraryjars libs/BaiduLBS_Android.jar
 -libraryjars libs/libammsdk.jar
--libraryjars libs/open_sdk_r5509.jar
+-libraryjars libs/open_sdk_r5509_lite.jar
 -libraryjars libs/zxing-3.2.1.jar
 -libraryjars libs/DecRawso.jar
 -libraryjars libs/mta-sdk-1.6.2.jar
