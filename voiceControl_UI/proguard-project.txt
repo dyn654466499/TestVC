@@ -22,11 +22,10 @@
 
 -libraryjars libs/IndoorscapeAlbumPlugin.jar
 -libraryjars libs/BaiduLBS_Android.jar
--libraryjars libs/libammsdk.jar
+#-libraryjars libs/libammsdk.jar
 -libraryjars libs/open_sdk_r5509_lite.jar
 -libraryjars libs/zxing-3.2.1.jar
 -libraryjars libs/DecRawso.jar
--libraryjars libs/mta-sdk-1.6.2.jar
 -libraryjars libs/android-support-v4.jar
 -libraryjars libs/httpmime-4.1.2.jar
 
@@ -134,15 +133,15 @@
 -keep class assets.**{*;}
 
 #微信
--dontwarn com.tencent.mm.** 
--keep class com.tencent.mm.sdk.** {*;}
--keep class com.tencent.mm.**{*;}
--keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
--keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+#-dontwarn com.tencent.mm.** 
+#-keep class com.tencent.mm.sdk.** {*;}
+#-keep class com.tencent.mm.**{*;}
+#-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+#-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
 
-#腾讯MTA
--dontwarn com.tencent.stat.**  
--keep class com.tencent.stat.** { *; }  
+#-keep class com.tencent.mm.sdk.** {
+#   *;
+#}
 
 #腾讯open sdk
 -dontwarn com.tencent.**  

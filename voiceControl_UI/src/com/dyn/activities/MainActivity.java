@@ -467,8 +467,8 @@ public class MainActivity extends BaseActivity{
 				entity.setDrawable(headImage);
 			} else {
 				if (isComMsg) {
-					robot_Drawable = setDrawable(R.drawable.assistant);
-					entity.setDrawable(setDrawable(R.drawable.assistant));
+					robot_Drawable = setDrawable(R.drawable.assistants);
+					entity.setDrawable(setDrawable(R.drawable.assistants));
 				} else {
 					user_Drawable = setDrawable(R.drawable.me);
 					entity.setDrawable(setDrawable(R.drawable.me));
@@ -578,7 +578,7 @@ public class MainActivity extends BaseActivity{
 					setMyMessage(receive_var, date, robot_Drawable);
 				} else
 					setMyMessage(receive_var, date,
-							setDrawable(R.drawable.assistant));
+							setDrawable(R.drawable.assistants));
  				break;
  			/**
 	          * 解压so成功
@@ -764,6 +764,7 @@ public class MainActivity extends BaseActivity{
 			if (results != null) {
 				Log.e(getTAG(),"语音结果="+results
 						.getResultString());
+				
 				String[] JsonResult = JsonUtil.ResultArray(results
 						.getResultString());
 				DataHoldUtil.setSpeechJson(results.getResultString());
@@ -1826,6 +1827,7 @@ public class MainActivity extends BaseActivity{
 	 */
 	private void synthetizeInSilence(String text) {
         Log.e(getTAG(), "文本转语音开始");
+        if(!TextUtils.isEmpty(text)){
 		String locale = getResources().getConfiguration().locale.toString();
 		JChineseConvertor jConvertor = null;
 		try {
@@ -1842,6 +1844,8 @@ public class MainActivity extends BaseActivity{
 				text = jConvertor.t2s(text);
 			}
 		}
+		if(text.contains("AV女演员") || text.contains("AV女优"))text = "对不起，该内容违反相关规定，请见谅！";
+		
 		/**
 		 * 在语音设置中是否开启了语音合成功能。
 		 */
@@ -1886,9 +1890,11 @@ public class MainActivity extends BaseActivity{
 		mSpeechSynthesizer.startSpeaking(text, mSynthesizerListener);
 		}
 		if (mHandler != null) {
+            
 			Message msg = mHandler.obtainMessage(RECEIVE, text);
 			mHandler.sendMessage(msg);
 		}
+        }
 	}
 
 	// 编写一个类实现语音合成接口

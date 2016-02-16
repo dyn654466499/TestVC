@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -22,6 +23,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.util.Log;
@@ -43,25 +45,26 @@ import com.dyn.utils.NetUtil;
 import com.dyn.voicecontrol.R;
 import com.tencent.connect.share.QQShare;
 import com.tencent.connect.share.QzoneShare;
-import com.tencent.mm.sdk.modelbase.BaseReq;
-import com.tencent.mm.sdk.modelbase.BaseResp;
-import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
-import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
-import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
-import com.tencent.mm.sdk.openapi.IWXAPI;
-import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
-import com.tencent.mm.sdk.openapi.WXAPIFactory;
+//import com.tencent.mm.sdk.modelbase.BaseReq;
+//import com.tencent.mm.sdk.modelbase.BaseResp;
+//import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
+//import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
+//import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
+//import com.tencent.mm.sdk.openapi.IWXAPI;
+//import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
+//import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 
 import static com.dyn.consts.Constants.*;
 
+@TargetApi(Build.VERSION_CODES.HONEYCOMB) 
 public class ShareActivity extends BaseActivity {
 	private Context mContext;
 	private Tencent qq_api;
     private BaseUiListener baseUiListener;
-    private IWXAPI wx_api;  
+    //private IWXAPI wx_api;  
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -75,39 +78,39 @@ public class ShareActivity extends BaseActivity {
 		/**
 		 * 微信sdk初始化
 		 */
-		wx_api = WXAPIFactory.createWXAPI(getApplicationContext(), WX_APP_ID, true);  
-		wx_api.registerApp(WX_APP_ID); 
-		wx_api.handleIntent(getIntent(), new IWXAPIEventHandler() {
-			
-			@Override
-			public void onResp(BaseResp resp) {
-				// TODO Auto-generated method stub
-				Log.e(getTAG(), "微信返回信息");  
-			    String result = "";  
-			    switch (resp.errCode) {  
-			    case BaseResp.ErrCode.ERR_OK:  
-			        result = "wxResponse:errcode_success";  
-			        break;  
-			    case BaseResp.ErrCode.ERR_USER_CANCEL:  
-			        result = "wxResponse:errcode_cancel";  
-			        break;  
-			    case BaseResp.ErrCode.ERR_AUTH_DENIED:  
-			        result = "wxResponse:errcode_deny";  
-			        break;  
-			    default:  
-			        result = "wxResponse:errcode_unknown";  
-			        break; 
-			    }
-			    
-			    Toast.makeText(ShareActivity.this, result,Toast.LENGTH_SHORT).show();
-			}
-			
-			@Override
-			public void onReq(BaseReq arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
+//		wx_api = WXAPIFactory.createWXAPI(getApplicationContext(), WX_APP_ID, true);  
+//		wx_api.registerApp(WX_APP_ID); 
+//		wx_api.handleIntent(getIntent(), new IWXAPIEventHandler() {
+//			
+//			@Override
+//			public void onResp(BaseResp resp) {
+//				// TODO Auto-generated method stub
+//				Log.e(getTAG(), "微信返回信息");  
+//			    String result = "";  
+//			    switch (resp.errCode) {  
+//			    case BaseResp.ErrCode.ERR_OK:  
+//			        result = "wxResponse:errcode_success";  
+//			        break;  
+//			    case BaseResp.ErrCode.ERR_USER_CANCEL:  
+//			        result = "wxResponse:errcode_cancel";  
+//			        break;  
+//			    case BaseResp.ErrCode.ERR_AUTH_DENIED:  
+//			        result = "wxResponse:errcode_deny";  
+//			        break;  
+//			    default:  
+//			        result = "wxResponse:errcode_unknown";  
+//			        break; 
+//			    }
+//			    
+//			    Toast.makeText(ShareActivity.this, result,Toast.LENGTH_SHORT).show();
+//			}
+//			
+//			@Override
+//			public void onReq(BaseReq arg0) {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//		});
 		
 		mContext = this;
 		setContentView(R.layout.activity_share);
@@ -188,12 +191,14 @@ public class ShareActivity extends BaseActivity {
 					    return;
 					}
 					if ("微信好友".equals(shareName)) {
-						share2weixin(0);
+						//share2weixin(0);
+						Toast.makeText(ShareActivity.this, "亲，不好意思，微信好友分享功能暂未实现哦！",Toast.LENGTH_SHORT).show();
 						finish();
 						return;
 					}
 					if ("朋友圈".equals(shareName)) {
-						share2weixin(1);
+						//share2weixin(1);
+						Toast.makeText(ShareActivity.this, "亲，不好意思，朋友圈分享功能暂未实现哦！",Toast.LENGTH_SHORT).show();
 						finish();
 						return;
 					}
@@ -311,30 +316,30 @@ public class ShareActivity extends BaseActivity {
      * 分享前判断下是否有安装微信，没有就不提示用户 
 	 * @param flag
 	 */
-	private void share2weixin(int flag) {  
-	    // Bitmap bmp = BitmapFactory.decodeResource(getResources(),  
-	    // R.drawable.weixin_share);  
-	  
-	    if (!wx_api.isWXAppInstalled()) {  
-	        Toast.makeText(ShareActivity.this, "您还未安装微信客户端",  
-	                Toast.LENGTH_SHORT).show();  
-	        return;  
-	    }  
-	  
-	    WXWebpageObject webpage = new WXWebpageObject();  
-	    webpage.webpageUrl = APK_MOBILE_DOWNLOAD_URL;  
-	    WXMediaMessage msg = new WXMediaMessage(webpage);  
-	  
-	    msg.title = "语音控制";  
-	    msg.description = "快来看看这款应用"; 
-	    Bitmap thumb = BitmapFactory.decodeResource(getResources(), R.drawable.control);  
-	    msg.setThumbImage(thumb);  
-	    SendMessageToWX.Req req = new SendMessageToWX.Req();  
-	    req.transaction = String.valueOf(System.currentTimeMillis());  
-	    req.message = msg;  
-	    req.scene = flag;
-	    wx_api.sendReq(req);  
-	}
+//	private void share2weixin(int flag) {  
+//	    // Bitmap bmp = BitmapFactory.decodeResource(getResources(),  
+//	    // R.drawable.weixin_share);  
+//	  
+//	    if (!wx_api.isWXAppInstalled()) {  
+//	        Toast.makeText(ShareActivity.this, "您还未安装微信客户端",  
+//	                Toast.LENGTH_SHORT).show();  
+//	        return;  
+//	    }  
+//	  
+//	    WXWebpageObject webpage = new WXWebpageObject();  
+//	    webpage.webpageUrl = APK_MOBILE_DOWNLOAD_URL;  
+//	    WXMediaMessage msg = new WXMediaMessage(webpage);  
+//	  
+//	    msg.title = "语音控制";  
+//	    msg.description = "快来看看这款应用"; 
+//	    Bitmap thumb = BitmapFactory.decodeResource(getResources(), R.drawable.control);  
+//	    msg.setThumbImage(thumb);  
+//	    SendMessageToWX.Req req = new SendMessageToWX.Req();  
+//	    req.transaction = String.valueOf(System.currentTimeMillis());  
+//	    req.message = msg;  
+//	    req.scene = flag;
+//	    wx_api.sendReq(req);  
+//	}
 
 	@Override
 	public void onClick(View v) {

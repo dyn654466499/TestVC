@@ -40,11 +40,11 @@ com.dyn.activities.MainActivity:
     private static final int FILE_REQUEST_CODE
     public static final int SEARCH_TEXT
     private static final int NOTIFICATION_ID
-    1169:1195:private void setAlarmToRemind(java.util.Calendar)
-    1724:1732:private static int sampleSize(int,int)
-    1813:1814:public static int px2dip(android.content.Context,float)
-    1818:1819:public static int dip2px(android.content.Context,float)
-    2223:2259:public android.graphics.Bitmap scaleImage()
+    1170:1196:private void setAlarmToRemind(java.util.Calendar)
+    1725:1733:private static int sampleSize(int,int)
+    1814:1815:public static int px2dip(android.content.Context,float)
+    1819:1820:public static int dip2px(android.content.Context,float)
+    2229:2265:public android.graphics.Bitmap scaleImage()
 com.dyn.activities.MapActivity:
     private static final java.lang.String APP_FOLDER_NAME
     private static final int DrivingRouteLine

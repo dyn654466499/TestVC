@@ -128,7 +128,7 @@ containing a value of this type.
         public static final int alert_border=0x7f020004;
         public static final int alert_left_selector=0x7f020005;
         public static final int alert_rigth_selector=0x7f020006;
-        public static final int assistant=0x7f020007;
+        public static final int assistants=0x7f020007;
         public static final int bdsocialshare_copylink=0x7f020008;
         public static final int bdsocialshare_email=0x7f020009;
         public static final int bdsocialshare_qqdenglu=0x7f02000a;

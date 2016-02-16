@@ -82,8 +82,8 @@ public class Constants {
      /**
       * 
       */
-     public static final String APK_DOWNLOAD_URL = "http://apk.hiapk.com/appinfo/com.dyn.voicecontrol";
+     public static final String APK_DOWNLOAD_URL = "http://apk.91.com/Soft/Android/com.dyn.voicecontrol-1-2.0.html";
      public static final String APK_LOGO_URL = "http://img.r1.market.hiapk.com/data/upload/2014/08_22/23/72_72_201408222330557854.png";
-     public static final String APK_MOBILE_DOWNLOAD_URL = "http://m.apk.hiapk.com/detail/2963855";
+     public static final String APK_MOBILE_DOWNLOAD_URL = "http://apk.91.com/Soft/Android/com.dyn.voicecontrol-1-2.0.html";
      
 }
