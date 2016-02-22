@@ -22709,6 +22709,811 @@ com.tencent.open.web.security.c: void a(java.lang.Object)
 com.tencent.open.web.security.c: void a()
 com.tencent.open.web.security.c: void a(java.lang.String)
 com.tencent.open.web.security.c: void b(java.lang.String)
+com.tencent.stat.DeviceInfo
+com.tencent.stat.DeviceInfo: int NEW_USER
+com.tencent.stat.DeviceInfo: int OLD_USER
+com.tencent.stat.DeviceInfo: int UPGRADE_USER
+com.tencent.stat.DeviceInfo: java.lang.String TAG_MID
+com.tencent.stat.DeviceInfo: java.lang.String TAG_IMEI
+com.tencent.stat.DeviceInfo: java.lang.String TAG_MAC
+com.tencent.stat.DeviceInfo: java.lang.String TAG_ANDROID_ID
+com.tencent.stat.DeviceInfo: java.lang.String TAG_TIMESTAMPS
+com.tencent.stat.DeviceInfo: java.lang.String TAG_VERSION
+com.tencent.stat.DeviceInfo: java.lang.String TAG_FLAG
+com.tencent.stat.DeviceInfo: java.lang.String a
+com.tencent.stat.DeviceInfo: java.lang.String b
+com.tencent.stat.DeviceInfo: java.lang.String c
+com.tencent.stat.DeviceInfo: java.lang.String d
+com.tencent.stat.DeviceInfo: int e
+com.tencent.stat.DeviceInfo: int f
+com.tencent.stat.DeviceInfo: long g
+com.tencent.stat.DeviceInfo: com.tencent.stat.common.StatLogger h
+com.tencent.stat.DeviceInfo: int a()
+com.tencent.stat.DeviceInfo: void a(int)
+com.tencent.stat.DeviceInfo: long b()
+com.tencent.stat.DeviceInfo: void a(long)
+com.tencent.stat.DeviceInfo: DeviceInfo()
+com.tencent.stat.DeviceInfo: DeviceInfo(java.lang.String,java.lang.String,int)
+com.tencent.stat.DeviceInfo: com.tencent.stat.DeviceInfo a(java.lang.String)
+com.tencent.stat.DeviceInfo: int a(com.tencent.stat.DeviceInfo)
+com.tencent.stat.DeviceInfo: java.lang.String toString()
+com.tencent.stat.DeviceInfo: org.json.JSONObject c()
+com.tencent.stat.DeviceInfo: void b(java.lang.String)
+com.tencent.stat.DeviceInfo: java.lang.String getMid()
+com.tencent.stat.DeviceInfo: void c(java.lang.String)
+com.tencent.stat.DeviceInfo: void d(java.lang.String)
+com.tencent.stat.DeviceInfo: java.lang.String getImei()
+com.tencent.stat.DeviceInfo: void e(java.lang.String)
+com.tencent.stat.DeviceInfo: java.lang.String getMac()
+com.tencent.stat.DeviceInfo: void b(int)
+com.tencent.stat.DeviceInfo: int getUserType()
+com.tencent.stat.DeviceInfo: void <clinit>()
+com.tencent.stat.EasyActivity
+com.tencent.stat.EasyActivity: EasyActivity()
+com.tencent.stat.EasyActivity: void onResume()
+com.tencent.stat.EasyActivity: void onPause()
+com.tencent.stat.EasyListActivity
+com.tencent.stat.EasyListActivity: EasyListActivity()
+com.tencent.stat.EasyListActivity: void onResume()
+com.tencent.stat.EasyListActivity: void onPause()
+com.tencent.stat.MtaSDkException
+com.tencent.stat.MtaSDkException: MtaSDkException()
+com.tencent.stat.MtaSDkException: MtaSDkException(java.lang.String)
+com.tencent.stat.MtaSDkException: MtaSDkException(java.lang.String,java.lang.Throwable)
+com.tencent.stat.MtaSDkException: MtaSDkException(java.lang.Throwable)
+com.tencent.stat.NetworkMonitor
+com.tencent.stat.NetworkMonitor: long a
+com.tencent.stat.NetworkMonitor: int b
+com.tencent.stat.NetworkMonitor: java.lang.String c
+com.tencent.stat.NetworkMonitor: int d
+com.tencent.stat.NetworkMonitor: java.lang.String e
+com.tencent.stat.NetworkMonitor: NetworkMonitor()
+com.tencent.stat.NetworkMonitor: long getMillisecondsConsume()
+com.tencent.stat.NetworkMonitor: void setMillisecondsConsume(long)
+com.tencent.stat.NetworkMonitor: int getStatusCode()
+com.tencent.stat.NetworkMonitor: void setStatusCode(int)
+com.tencent.stat.NetworkMonitor: java.lang.String getDomain()
+com.tencent.stat.NetworkMonitor: void setDomain(java.lang.String)
+com.tencent.stat.NetworkMonitor: int getPort()
+com.tencent.stat.NetworkMonitor: void setPort(int)
+com.tencent.stat.NetworkMonitor: java.lang.String getRemoteIp()
+com.tencent.stat.NetworkMonitor: void setRemoteIp(java.lang.String)
+com.tencent.stat.NetworkMonitor: org.json.JSONObject toJSONObject()
+com.tencent.stat.StatAppMonitor
+com.tencent.stat.StatAppMonitor: int SUCCESS_RESULT_TYPE
+com.tencent.stat.StatAppMonitor: int FAILURE_RESULT_TYPE
+com.tencent.stat.StatAppMonitor: int LOGIC_FAILURE_RESULT_TYPE
+com.tencent.stat.StatAppMonitor: java.lang.String a
+com.tencent.stat.StatAppMonitor: long b
+com.tencent.stat.StatAppMonitor: long c
+com.tencent.stat.StatAppMonitor: int d
+com.tencent.stat.StatAppMonitor: long e
+com.tencent.stat.StatAppMonitor: int f
+com.tencent.stat.StatAppMonitor: int g
+com.tencent.stat.StatAppMonitor: StatAppMonitor(java.lang.String)
+com.tencent.stat.StatAppMonitor: StatAppMonitor(java.lang.String,int,int,long,long,long,int)
+com.tencent.stat.StatAppMonitor: java.lang.String getInterfaceName()
+com.tencent.stat.StatAppMonitor: void setInterfaceName(java.lang.String)
+com.tencent.stat.StatAppMonitor: long getReqSize()
+com.tencent.stat.StatAppMonitor: void setReqSize(long)
+com.tencent.stat.StatAppMonitor: long getRespSize()
+com.tencent.stat.StatAppMonitor: void setRespSize(long)
+com.tencent.stat.StatAppMonitor: int getResultType()
+com.tencent.stat.StatAppMonitor: void setResultType(int)
+com.tencent.stat.StatAppMonitor: long getMillisecondsConsume()
+com.tencent.stat.StatAppMonitor: void setMillisecondsConsume(long)
+com.tencent.stat.StatAppMonitor: int getReturnCode()
+com.tencent.stat.StatAppMonitor: void setReturnCode(int)
+com.tencent.stat.StatAppMonitor: int getSampling()
+com.tencent.stat.StatAppMonitor: void setSampling(int)
+com.tencent.stat.StatAppMonitor: com.tencent.stat.StatAppMonitor clone()
+com.tencent.stat.StatAppMonitor: java.lang.Object clone()
+com.tencent.stat.StatConfig
+com.tencent.stat.StatConfig: com.tencent.stat.common.StatLogger e
+com.tencent.stat.StatConfig: com.tencent.stat.b a
+com.tencent.stat.StatConfig: com.tencent.stat.b b
+com.tencent.stat.StatConfig: com.tencent.stat.StatReportStrategy f
+com.tencent.stat.StatConfig: boolean g
+com.tencent.stat.StatConfig: int h
+com.tencent.stat.StatConfig: int i
+com.tencent.stat.StatConfig: int j
+com.tencent.stat.StatConfig: int k
+com.tencent.stat.StatConfig: int l
+com.tencent.stat.StatConfig: java.lang.String c
+com.tencent.stat.StatConfig: java.lang.String m
+com.tencent.stat.StatConfig: java.lang.String n
+com.tencent.stat.StatConfig: java.lang.String o
+com.tencent.stat.StatConfig: java.lang.String d
+com.tencent.stat.StatConfig: int p
+com.tencent.stat.StatConfig: int q
+com.tencent.stat.StatConfig: boolean r
+com.tencent.stat.StatConfig: long s
+com.tencent.stat.StatConfig: long t
+com.tencent.stat.StatConfig: boolean isAutoExceptionCaught
+com.tencent.stat.StatConfig: java.lang.String u
+com.tencent.stat.StatConfig: int v
+com.tencent.stat.StatConfig: int w
+com.tencent.stat.StatConfig: int x
+com.tencent.stat.StatConfig: int y
+com.tencent.stat.StatConfig: boolean z
+com.tencent.stat.StatConfig: int A
+com.tencent.stat.StatConfig: boolean B
+com.tencent.stat.StatConfig: java.lang.String C
+com.tencent.stat.StatConfig: StatConfig()
+com.tencent.stat.StatConfig: boolean a(int,int,int)
+com.tencent.stat.StatConfig: com.tencent.stat.StatReportStrategy getStatSendStrategy()
+com.tencent.stat.StatConfig: void setStatSendStrategy(com.tencent.stat.StatReportStrategy)
+com.tencent.stat.StatConfig: boolean isDebugEnable()
+com.tencent.stat.StatConfig: void setDebugEnable(boolean)
+com.tencent.stat.StatConfig: boolean isEnableStatService()
+com.tencent.stat.StatConfig: void setEnableStatService(boolean)
+com.tencent.stat.StatConfig: int getSessionTimoutMillis()
+com.tencent.stat.StatConfig: void setSessionTimoutMillis(int)
+com.tencent.stat.StatConfig: int getMaxBatchReportCount()
+com.tencent.stat.StatConfig: void setMaxBatchReportCount(int)
+com.tencent.stat.StatConfig: void setMaxSendRetryCount(int)
+com.tencent.stat.StatConfig: int getMaxSendRetryCount()
+com.tencent.stat.StatConfig: int a()
+com.tencent.stat.StatConfig: int getMaxStoreEventCount()
+com.tencent.stat.StatConfig: void setMaxStoreEventCount(int)
+com.tencent.stat.StatConfig: java.lang.String getCustomProperty(java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String getCustomProperty(java.lang.String,java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String a(java.lang.String,java.lang.String)
+com.tencent.stat.StatConfig: void a(org.json.JSONObject)
+com.tencent.stat.StatConfig: void a(com.tencent.stat.b,org.json.JSONObject)
+com.tencent.stat.StatConfig: void b(org.json.JSONObject)
+com.tencent.stat.StatConfig: void a(com.tencent.stat.b)
+com.tencent.stat.StatConfig: void c(org.json.JSONObject)
+com.tencent.stat.StatConfig: org.apache.http.HttpHost b()
+com.tencent.stat.StatConfig: void a(android.content.Context,java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String a(android.content.Context)
+com.tencent.stat.StatConfig: java.lang.String getAppKey(android.content.Context)
+com.tencent.stat.StatConfig: boolean a(java.lang.String)
+com.tencent.stat.StatConfig: void setAppKey(android.content.Context,java.lang.String)
+com.tencent.stat.StatConfig: void setAppKey(java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String getInstallChannel(android.content.Context)
+com.tencent.stat.StatConfig: void setInstallChannel(java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String getQQ()
+com.tencent.stat.StatConfig: void setQQ(android.content.Context,java.lang.String)
+com.tencent.stat.StatConfig: void setSendPeriodMinutes(int)
+com.tencent.stat.StatConfig: int getSendPeriodMinutes()
+com.tencent.stat.StatConfig: int getMaxParallelTimmingEvents()
+com.tencent.stat.StatConfig: void setMaxParallelTimmingEvents(int)
+com.tencent.stat.StatConfig: boolean isEnableSmartReporting()
+com.tencent.stat.StatConfig: void setEnableSmartReporting(boolean)
+com.tencent.stat.StatConfig: boolean isAutoExceptionCaught()
+com.tencent.stat.StatConfig: void setAutoExceptionCaught(boolean)
+com.tencent.stat.StatConfig: java.lang.String getStatReportUrl()
+com.tencent.stat.StatConfig: void setStatReportUrl(java.lang.String)
+com.tencent.stat.StatConfig: int getMaxSessionStatReportCount()
+com.tencent.stat.StatConfig: void setMaxSessionStatReportCount(int)
+com.tencent.stat.StatConfig: int getCurSessionStatReportCount()
+com.tencent.stat.StatConfig: void a(int)
+com.tencent.stat.StatConfig: void c()
+com.tencent.stat.StatConfig: int getMaxDaySessionNumbers()
+com.tencent.stat.StatConfig: void setMaxDaySessionNumbers(int)
+com.tencent.stat.StatConfig: void d()
+com.tencent.stat.StatConfig: void b(int)
+com.tencent.stat.StatConfig: int e()
+com.tencent.stat.StatConfig: int getMaxReportEventLength()
+com.tencent.stat.StatConfig: void setMaxReportEventLength(int)
+com.tencent.stat.StatConfig: boolean isEnableConcurrentProcess()
+com.tencent.stat.StatConfig: void setEnableConcurrentProcess(boolean)
+com.tencent.stat.StatConfig: java.lang.String getCustomUserId(android.content.Context)
+com.tencent.stat.StatConfig: void setCustomUserId(android.content.Context,java.lang.String)
+com.tencent.stat.StatConfig: void a(boolean)
+com.tencent.stat.StatConfig: void initNativeCrashReport(android.content.Context,java.lang.String)
+com.tencent.stat.StatConfig: java.lang.String getMid(android.content.Context)
+com.tencent.stat.StatConfig: com.tencent.stat.DeviceInfo getDeviceInfo(android.content.Context)
+com.tencent.stat.StatConfig: void <clinit>()
+com.tencent.stat.StatGameUser
+com.tencent.stat.StatGameUser: java.lang.String a
+com.tencent.stat.StatGameUser: java.lang.String b
+com.tencent.stat.StatGameUser: java.lang.String c
+com.tencent.stat.StatGameUser: StatGameUser()
+com.tencent.stat.StatGameUser: java.lang.String getWorldName()
+com.tencent.stat.StatGameUser: void setWorldName(java.lang.String)
+com.tencent.stat.StatGameUser: java.lang.String getAccount()
+com.tencent.stat.StatGameUser: void setAccount(java.lang.String)
+com.tencent.stat.StatGameUser: java.lang.String getLevel()
+com.tencent.stat.StatGameUser: void setLevel(java.lang.String)
+com.tencent.stat.StatGameUser: com.tencent.stat.StatGameUser clone()
+com.tencent.stat.StatGameUser: java.lang.Object clone()
+com.tencent.stat.StatMid
+com.tencent.stat.StatMid: com.tencent.stat.common.StatLogger a
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo b
+com.tencent.stat.StatMid: StatMid()
+com.tencent.stat.StatMid: java.lang.String getMid(android.content.Context)
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo getDeviceInfo(android.content.Context)
+com.tencent.stat.StatMid: void updateDeviceInfo(android.content.Context,java.lang.String)
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo a(com.tencent.stat.DeviceInfo,com.tencent.stat.DeviceInfo)
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo a(com.tencent.stat.DeviceInfo,com.tencent.stat.DeviceInfo,com.tencent.stat.DeviceInfo)
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo a(android.content.Context)
+com.tencent.stat.StatMid: com.tencent.stat.DeviceInfo a(java.lang.String)
+com.tencent.stat.StatMid: void <clinit>()
+com.tencent.stat.StatNativeCrashReport
+com.tencent.stat.StatNativeCrashReport: com.tencent.stat.common.StatLogger b
+com.tencent.stat.StatNativeCrashReport: com.tencent.stat.StatNativeCrashReport a
+com.tencent.stat.StatNativeCrashReport: boolean c
+com.tencent.stat.StatNativeCrashReport: java.lang.String PRE_TAG_TOMBSTONE_FNAME
+com.tencent.stat.StatNativeCrashReport: boolean d
+com.tencent.stat.StatNativeCrashReport: boolean e
+com.tencent.stat.StatNativeCrashReport: java.lang.String f
+com.tencent.stat.StatNativeCrashReport: StatNativeCrashReport()
+com.tencent.stat.StatNativeCrashReport: java.lang.String stringFromJNI()
+com.tencent.stat.StatNativeCrashReport: boolean initJNICrash(java.lang.String)
+com.tencent.stat.StatNativeCrashReport: void enableNativeCrashDebug(boolean)
+com.tencent.stat.StatNativeCrashReport: void enableNativeCrash(boolean)
+com.tencent.stat.StatNativeCrashReport: java.lang.String makeJniCrash()
+com.tencent.stat.StatNativeCrashReport: java.lang.String onNativeCrashHappened()
+com.tencent.stat.StatNativeCrashReport: void doNativeCrashTest()
+com.tencent.stat.StatNativeCrashReport: void setNativeCrashEnable(boolean)
+com.tencent.stat.StatNativeCrashReport: boolean isNativeCrashEnable()
+com.tencent.stat.StatNativeCrashReport: void setNativeCrashDebugEnable(boolean)
+com.tencent.stat.StatNativeCrashReport: boolean isNativeCrashDebugEnable()
+com.tencent.stat.StatNativeCrashReport: void initNativeCrash(android.content.Context,java.lang.String)
+com.tencent.stat.StatNativeCrashReport: java.lang.String getTombstonesDir(android.content.Context)
+com.tencent.stat.StatNativeCrashReport: java.lang.String a(java.io.File)
+com.tencent.stat.StatNativeCrashReport: java.util.LinkedHashSet a(android.content.Context)
+com.tencent.stat.StatNativeCrashReport: long b(java.io.File)
+com.tencent.stat.StatNativeCrashReport: void <clinit>()
+com.tencent.stat.StatReportStrategy
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy INSTANT
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy ONLY_WIFI
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy BATCH
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy APP_LAUNCH
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy DEVELOPER
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy PERIOD
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy ONLY_WIFI_NO_CACHE
+com.tencent.stat.StatReportStrategy: int a
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy[] b
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy[] values()
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy valueOf(java.lang.String)
+com.tencent.stat.StatReportStrategy: StatReportStrategy(java.lang.String,int,int)
+com.tencent.stat.StatReportStrategy: int a()
+com.tencent.stat.StatReportStrategy: com.tencent.stat.StatReportStrategy getStatReportStrategy(int)
+com.tencent.stat.StatReportStrategy: void <clinit>()
+com.tencent.stat.StatService
+com.tencent.stat.StatService: android.os.Handler a
+com.tencent.stat.StatService: java.util.Map b
+com.tencent.stat.StatService: long c
+com.tencent.stat.StatService: long d
+com.tencent.stat.StatService: int e
+com.tencent.stat.StatService: java.lang.String f
+com.tencent.stat.StatService: java.lang.String g
+com.tencent.stat.StatService: java.util.Map h
+com.tencent.stat.StatService: com.tencent.stat.common.StatLogger i
+com.tencent.stat.StatService: java.lang.Thread$UncaughtExceptionHandler j
+com.tencent.stat.StatService: boolean k
+com.tencent.stat.StatService: StatService()
+com.tencent.stat.StatService: void a(android.content.Context)
+com.tencent.stat.StatService: boolean b(android.content.Context)
+com.tencent.stat.StatService: boolean a(java.lang.String)
+com.tencent.stat.StatService: android.os.Handler c(android.content.Context)
+com.tencent.stat.StatService: org.json.JSONObject a()
+com.tencent.stat.StatService: void d(android.content.Context)
+com.tencent.stat.StatService: int a(android.content.Context,boolean)
+com.tencent.stat.StatService: void trackBeginPage(android.content.Context,java.lang.String)
+com.tencent.stat.StatService: void trackEndPage(android.content.Context,java.lang.String)
+com.tencent.stat.StatService: void startNewSession(android.content.Context)
+com.tencent.stat.StatService: void stopSession()
+com.tencent.stat.StatService: void onResume(android.content.Context)
+com.tencent.stat.StatService: void setEnvAttributes(android.content.Context,java.util.Map)
+com.tencent.stat.StatService: void reportQQ(android.content.Context,java.lang.String)
+com.tencent.stat.StatService: void reportGameUser(android.content.Context,com.tencent.stat.StatGameUser)
+com.tencent.stat.StatService: boolean startStatService(android.content.Context,java.lang.String,java.lang.String)
+com.tencent.stat.StatService: void onPause(android.content.Context)
+com.tencent.stat.StatService: void reportError(android.content.Context,java.lang.String)
+com.tencent.stat.StatService: void a(android.content.Context,java.lang.Throwable)
+com.tencent.stat.StatService: void a(android.content.Context,java.util.Map)
+com.tencent.stat.StatService: void reportException(android.content.Context,java.lang.Throwable)
+com.tencent.stat.StatService: void e(android.content.Context)
+com.tencent.stat.StatService: void trackCustomEvent(android.content.Context,java.lang.String,java.lang.String[])
+com.tencent.stat.StatService: void trackCustomKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+com.tencent.stat.StatService: void trackCustomBeginEvent(android.content.Context,java.lang.String,java.lang.String[])
+com.tencent.stat.StatService: void trackCustomEndEvent(android.content.Context,java.lang.String,java.lang.String[])
+com.tencent.stat.StatService: void trackCustomBeginKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+com.tencent.stat.StatService: void trackCustomEndKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+com.tencent.stat.StatService: void reportAppMonitorStat(android.content.Context,com.tencent.stat.StatAppMonitor)
+com.tencent.stat.StatService: void commitEvents(android.content.Context,int)
+com.tencent.stat.StatService: void testSpeed(android.content.Context)
+com.tencent.stat.StatService: void testSpeed(android.content.Context,java.util.Map)
+com.tencent.stat.StatService: com.tencent.stat.common.StatLogger b()
+com.tencent.stat.StatService: java.lang.Thread$UncaughtExceptionHandler c()
+com.tencent.stat.StatService: void <clinit>()
+com.tencent.stat.a
+com.tencent.stat.a: com.tencent.stat.common.StatLogger a
+com.tencent.stat.a: com.tencent.stat.a b
+com.tencent.stat.a: boolean c
+com.tencent.stat.a: boolean d
+com.tencent.stat.a: boolean e
+com.tencent.stat.a: android.content.Context f
+com.tencent.stat.a: a(android.content.Context)
+com.tencent.stat.a: com.tencent.stat.a a(android.content.Context)
+com.tencent.stat.a: boolean b(android.content.Context)
+com.tencent.stat.a: boolean c(android.content.Context)
+com.tencent.stat.a: boolean d(android.content.Context)
+com.tencent.stat.a: boolean a(java.lang.String,java.lang.String)
+com.tencent.stat.a: java.lang.String b(java.lang.String,java.lang.String)
+com.tencent.stat.a: boolean c(java.lang.String,java.lang.String)
+com.tencent.stat.a: java.lang.String d(java.lang.String,java.lang.String)
+com.tencent.stat.a: boolean e(java.lang.String,java.lang.String)
+com.tencent.stat.a: java.lang.String f(java.lang.String,java.lang.String)
+com.tencent.stat.a: void <clinit>()
+com.tencent.stat.a.a
+com.tencent.stat.a.a: java.util.Map a
+com.tencent.stat.a.a: a(android.content.Context,int,java.util.Map)
+com.tencent.stat.a.a: com.tencent.stat.a.f a()
+com.tencent.stat.a.a: boolean a(org.json.JSONObject)
+com.tencent.stat.a.b
+com.tencent.stat.a.b: com.tencent.stat.a.c a
+com.tencent.stat.a.b: long l
+com.tencent.stat.a.b: void a(long)
+com.tencent.stat.a.b: void a(java.lang.String[])
+com.tencent.stat.a.b: void a(java.util.Properties)
+com.tencent.stat.a.b: b(android.content.Context,int,java.lang.String)
+com.tencent.stat.a.b: com.tencent.stat.a.f a()
+com.tencent.stat.a.b: boolean a(org.json.JSONObject)
+com.tencent.stat.a.c
+com.tencent.stat.a.c: java.lang.String a
+com.tencent.stat.a.c: java.lang.String[] b
+com.tencent.stat.a.c: java.util.Properties c
+com.tencent.stat.a.c: c(java.lang.String,java.lang.String[],java.util.Properties)
+com.tencent.stat.a.c: c()
+com.tencent.stat.a.c: java.lang.String toString()
+com.tencent.stat.a.c: int hashCode()
+com.tencent.stat.a.c: boolean equals(java.lang.Object)
+com.tencent.stat.a.d
+com.tencent.stat.a.d: java.lang.String a
+com.tencent.stat.a.d: int l
+com.tencent.stat.a.d: int m
+com.tencent.stat.a.d: d(android.content.Context,int,int,java.lang.Throwable)
+com.tencent.stat.a.d: d(android.content.Context,int,java.lang.String,int,int)
+com.tencent.stat.a.d: void a(long)
+com.tencent.stat.a.d: com.tencent.stat.a.f a()
+com.tencent.stat.a.d: boolean a(org.json.JSONObject)
+com.tencent.stat.a.e
+com.tencent.stat.a.e: java.lang.String b
+com.tencent.stat.a.e: long c
+com.tencent.stat.a.e: int d
+com.tencent.stat.a.e: com.tencent.stat.DeviceInfo e
+com.tencent.stat.a.e: int f
+com.tencent.stat.a.e: java.lang.String g
+com.tencent.stat.a.e: java.lang.String h
+com.tencent.stat.a.e: java.lang.String i
+com.tencent.stat.a.e: java.lang.String j
+com.tencent.stat.a.e: boolean a
+com.tencent.stat.a.e: android.content.Context k
+com.tencent.stat.a.e: long b()
+com.tencent.stat.a.e: e(android.content.Context,int)
+com.tencent.stat.a.e: android.content.Context c()
+com.tencent.stat.a.e: com.tencent.stat.a.f a()
+com.tencent.stat.a.e: boolean a(org.json.JSONObject)
+com.tencent.stat.a.e: boolean b(org.json.JSONObject)
+com.tencent.stat.a.e: java.lang.String d()
+com.tencent.stat.a.e: void <clinit>()
+com.tencent.stat.a.f
+com.tencent.stat.a.f: com.tencent.stat.a.f a
+com.tencent.stat.a.f: com.tencent.stat.a.f b
+com.tencent.stat.a.f: com.tencent.stat.a.f c
+com.tencent.stat.a.f: com.tencent.stat.a.f d
+com.tencent.stat.a.f: com.tencent.stat.a.f e
+com.tencent.stat.a.f: com.tencent.stat.a.f f
+com.tencent.stat.a.f: com.tencent.stat.a.f g
+com.tencent.stat.a.f: com.tencent.stat.a.f h
+com.tencent.stat.a.f: int i
+com.tencent.stat.a.f: com.tencent.stat.a.f[] j
+com.tencent.stat.a.f: f(java.lang.String,int,int)
+com.tencent.stat.a.f: int a()
+com.tencent.stat.a.f: void <clinit>()
+com.tencent.stat.a.g
+com.tencent.stat.a.g: com.tencent.stat.StatGameUser a
+com.tencent.stat.a.g: g(android.content.Context,int,com.tencent.stat.StatGameUser)
+com.tencent.stat.a.g: com.tencent.stat.a.f a()
+com.tencent.stat.a.g: boolean a(org.json.JSONObject)
+com.tencent.stat.a.h
+com.tencent.stat.a.h: com.tencent.stat.StatAppMonitor a
+com.tencent.stat.a.h: java.lang.String l
+com.tencent.stat.a.h: java.lang.String m
+com.tencent.stat.a.h: h(android.content.Context,int,com.tencent.stat.StatAppMonitor)
+com.tencent.stat.a.h: com.tencent.stat.a.f a()
+com.tencent.stat.a.h: boolean a(org.json.JSONObject)
+com.tencent.stat.a.h: void <clinit>()
+com.tencent.stat.a.i
+com.tencent.stat.a.i: java.lang.String a
+com.tencent.stat.a.i: java.lang.String l
+com.tencent.stat.a.i: java.lang.String m
+com.tencent.stat.a.i: void a(java.lang.String)
+com.tencent.stat.a.i: i(android.content.Context,int)
+com.tencent.stat.a.i: com.tencent.stat.a.f a()
+com.tencent.stat.a.i: boolean a(org.json.JSONObject)
+com.tencent.stat.a.i: void <clinit>()
+com.tencent.stat.a.j
+com.tencent.stat.a.j: java.lang.Long a
+com.tencent.stat.a.j: java.lang.String l
+com.tencent.stat.a.j: java.lang.String m
+com.tencent.stat.a.j: j(android.content.Context,java.lang.String,java.lang.String,int,java.lang.Long)
+com.tencent.stat.a.j: com.tencent.stat.a.f a()
+com.tencent.stat.a.j: boolean a(org.json.JSONObject)
+com.tencent.stat.a.k
+com.tencent.stat.a.k: com.tencent.stat.common.a a
+com.tencent.stat.a.k: org.json.JSONObject l
+com.tencent.stat.a.k: k(android.content.Context,int,org.json.JSONObject)
+com.tencent.stat.a.k: com.tencent.stat.a.f a()
+com.tencent.stat.a.k: boolean a(org.json.JSONObject)
+com.tencent.stat.b
+com.tencent.stat.b: int a
+com.tencent.stat.b: org.json.JSONObject b
+com.tencent.stat.b: java.lang.String c
+com.tencent.stat.b: int d
+com.tencent.stat.b: b(int)
+com.tencent.stat.b: java.lang.String a()
+com.tencent.stat.c
+com.tencent.stat.c: void a()
+com.tencent.stat.c: void b()
+com.tencent.stat.common.StatConstants
+com.tencent.stat.common.StatConstants: java.lang.String VERSION
+com.tencent.stat.common.StatConstants: java.lang.String MTA_SERVER
+com.tencent.stat.common.StatConstants: java.lang.String MTA_STAT_URL
+com.tencent.stat.common.StatConstants: java.lang.String MTA_COOPERATION_TAG
+com.tencent.stat.common.StatConstants: int STAT_DB_VERSION
+com.tencent.stat.common.StatConstants: int SDK_ONLINE_CONFIG_TYPE
+com.tencent.stat.common.StatConstants: int USER_ONLINE_CONFIG_TYPE
+com.tencent.stat.common.StatConstants: java.lang.String a
+com.tencent.stat.common.StatConstants: StatConstants()
+com.tencent.stat.common.StatConstants: void <clinit>()
+com.tencent.stat.common.StatLogger
+com.tencent.stat.common.StatLogger: java.lang.String a
+com.tencent.stat.common.StatLogger: boolean b
+com.tencent.stat.common.StatLogger: int c
+com.tencent.stat.common.StatLogger: boolean isDebugEnable()
+com.tencent.stat.common.StatLogger: void setDebugEnable(boolean)
+com.tencent.stat.common.StatLogger: int getLogLevel()
+com.tencent.stat.common.StatLogger: void setLogLevel(int)
+com.tencent.stat.common.StatLogger: StatLogger()
+com.tencent.stat.common.StatLogger: StatLogger(java.lang.String)
+com.tencent.stat.common.StatLogger: void setTag(java.lang.String)
+com.tencent.stat.common.StatLogger: java.lang.String a()
+com.tencent.stat.common.StatLogger: void info(java.lang.Object)
+com.tencent.stat.common.StatLogger: void i(java.lang.Object)
+com.tencent.stat.common.StatLogger: void verbose(java.lang.Object)
+com.tencent.stat.common.StatLogger: void v(java.lang.Object)
+com.tencent.stat.common.StatLogger: void warn(java.lang.Object)
+com.tencent.stat.common.StatLogger: void w(java.lang.Object)
+com.tencent.stat.common.StatLogger: void error(java.lang.Object)
+com.tencent.stat.common.StatLogger: void error(java.lang.Exception)
+com.tencent.stat.common.StatLogger: void e(java.lang.Object)
+com.tencent.stat.common.StatLogger: void e(java.lang.Exception)
+com.tencent.stat.common.StatLogger: void debug(java.lang.Object)
+com.tencent.stat.common.StatLogger: void d(java.lang.Object)
+com.tencent.stat.common.a
+com.tencent.stat.common.a: com.tencent.stat.common.c a
+com.tencent.stat.common.a: com.tencent.stat.common.StatLogger d
+com.tencent.stat.common.a: java.lang.Integer b
+com.tencent.stat.common.a: java.lang.String c
+com.tencent.stat.common.a: org.json.JSONObject e
+com.tencent.stat.common.a: void a(android.content.Context,java.util.Map)
+com.tencent.stat.common.a: com.tencent.stat.common.c a(android.content.Context)
+com.tencent.stat.common.a: a(android.content.Context)
+com.tencent.stat.common.a: void a(org.json.JSONObject)
+com.tencent.stat.common.a: void <clinit>()
+com.tencent.stat.common.b
+com.tencent.stat.common.c
+com.tencent.stat.common.c: java.lang.String a
+com.tencent.stat.common.c: java.lang.String b
+com.tencent.stat.common.c: android.util.DisplayMetrics c
+com.tencent.stat.common.c: int d
+com.tencent.stat.common.c: java.lang.String e
+com.tencent.stat.common.c: java.lang.String f
+com.tencent.stat.common.c: java.lang.String g
+com.tencent.stat.common.c: java.lang.String h
+com.tencent.stat.common.c: java.lang.String i
+com.tencent.stat.common.c: java.lang.String j
+com.tencent.stat.common.c: java.lang.String k
+com.tencent.stat.common.c: int l
+com.tencent.stat.common.c: java.lang.String m
+com.tencent.stat.common.c: android.content.Context n
+com.tencent.stat.common.c: java.lang.String o
+com.tencent.stat.common.c: java.lang.String p
+com.tencent.stat.common.c: java.lang.String q
+com.tencent.stat.common.c: java.lang.String r
+com.tencent.stat.common.c: c(android.content.Context)
+com.tencent.stat.common.c: void a(org.json.JSONObject)
+com.tencent.stat.common.c: c(android.content.Context,com.tencent.stat.common.b)
+com.tencent.stat.common.d
+com.tencent.stat.common.d: java.util.List a(java.io.File)
+com.tencent.stat.common.d: java.io.File a(java.lang.String)
+com.tencent.stat.common.e
+com.tencent.stat.common.e: byte[] a
+com.tencent.stat.common.e: byte[] a(byte[])
+com.tencent.stat.common.e: byte[] b(byte[])
+com.tencent.stat.common.e: byte[] a(byte[],byte[])
+com.tencent.stat.common.e: byte[] b(byte[],byte[])
+com.tencent.stat.common.e: void <clinit>()
+com.tencent.stat.common.f
+com.tencent.stat.common.f: long a
+com.tencent.stat.common.f: long a(android.content.Context,java.lang.String)
+com.tencent.stat.common.f: void a(android.content.Context,java.lang.String,long)
+com.tencent.stat.common.f: boolean a(android.content.Context)
+com.tencent.stat.common.f: void b(android.content.Context)
+com.tencent.stat.common.f: void <clinit>()
+com.tencent.stat.common.g
+com.tencent.stat.common.g: boolean a
+com.tencent.stat.common.g: byte[] a(byte[],int)
+com.tencent.stat.common.g: byte[] a(byte[],int,int,int)
+com.tencent.stat.common.g: byte[] b(byte[],int)
+com.tencent.stat.common.g: byte[] b(byte[],int,int,int)
+com.tencent.stat.common.g: g()
+com.tencent.stat.common.g: void <clinit>()
+com.tencent.stat.common.h
+com.tencent.stat.common.h: byte[] a
+com.tencent.stat.common.h: int b
+com.tencent.stat.common.h: h()
+com.tencent.stat.common.i
+com.tencent.stat.common.i: int[] c
+com.tencent.stat.common.i: int[] d
+com.tencent.stat.common.i: int e
+com.tencent.stat.common.i: int f
+com.tencent.stat.common.i: int[] g
+com.tencent.stat.common.i: i(int,byte[])
+com.tencent.stat.common.i: boolean a(byte[],int,int,boolean)
+com.tencent.stat.common.i: void <clinit>()
+com.tencent.stat.common.j
+com.tencent.stat.common.j: byte[] h
+com.tencent.stat.common.j: byte[] i
+com.tencent.stat.common.j: byte[] j
+com.tencent.stat.common.j: int c
+com.tencent.stat.common.j: int k
+com.tencent.stat.common.j: boolean d
+com.tencent.stat.common.j: boolean e
+com.tencent.stat.common.j: boolean f
+com.tencent.stat.common.j: byte[] l
+com.tencent.stat.common.j: boolean g
+com.tencent.stat.common.j: j(int,byte[])
+com.tencent.stat.common.j: boolean a(byte[],int,int,boolean)
+com.tencent.stat.common.j: void <clinit>()
+com.tencent.stat.common.k
+com.tencent.stat.common.k: java.lang.String a
+com.tencent.stat.common.k: java.lang.String b
+com.tencent.stat.common.k: java.lang.String c
+com.tencent.stat.common.k: java.lang.String d
+com.tencent.stat.common.k: java.util.Random e
+com.tencent.stat.common.k: com.tencent.stat.common.StatLogger f
+com.tencent.stat.common.k: java.lang.String g
+com.tencent.stat.common.k: com.tencent.stat.common.l h
+com.tencent.stat.common.k: com.tencent.stat.common.n i
+com.tencent.stat.common.k: java.lang.String j
+com.tencent.stat.common.k: int k
+com.tencent.stat.common.k: java.util.Random h()
+com.tencent.stat.common.k: int a()
+com.tencent.stat.common.k: byte[] a(byte[])
+com.tencent.stat.common.k: java.lang.String a(java.lang.String)
+com.tencent.stat.common.k: org.apache.http.HttpHost a(android.content.Context)
+com.tencent.stat.common.k: java.lang.String b(android.content.Context)
+com.tencent.stat.common.k: java.lang.String c(android.content.Context)
+com.tencent.stat.common.k: android.util.DisplayMetrics d(android.content.Context)
+com.tencent.stat.common.k: boolean a(android.content.Context,java.lang.String)
+com.tencent.stat.common.k: boolean e(android.content.Context)
+com.tencent.stat.common.k: java.lang.String f(android.content.Context)
+com.tencent.stat.common.k: boolean g(android.content.Context)
+com.tencent.stat.common.k: boolean h(android.content.Context)
+com.tencent.stat.common.k: java.lang.String i(android.content.Context)
+com.tencent.stat.common.k: java.lang.String j(android.content.Context)
+com.tencent.stat.common.k: java.lang.String k(android.content.Context)
+com.tencent.stat.common.k: java.lang.String l(android.content.Context)
+com.tencent.stat.common.k: java.lang.String m(android.content.Context)
+com.tencent.stat.common.k: java.lang.String n(android.content.Context)
+com.tencent.stat.common.k: boolean o(android.content.Context)
+com.tencent.stat.common.k: java.lang.String p(android.content.Context)
+com.tencent.stat.common.k: java.lang.Integer q(android.content.Context)
+com.tencent.stat.common.k: java.lang.String r(android.content.Context)
+com.tencent.stat.common.k: void a(org.json.JSONObject,java.lang.String,java.lang.String)
+com.tencent.stat.common.k: int s(android.content.Context)
+com.tencent.stat.common.k: com.tencent.stat.common.StatLogger b()
+com.tencent.stat.common.k: long c()
+com.tencent.stat.common.k: java.lang.Long a(java.lang.String,java.lang.String,int,int,java.lang.Long)
+com.tencent.stat.common.k: long b(java.lang.String)
+com.tencent.stat.common.k: java.lang.String t(android.content.Context)
+com.tencent.stat.common.k: java.lang.String a(long)
+com.tencent.stat.common.k: java.lang.String c(java.lang.String)
+com.tencent.stat.common.k: int d()
+com.tencent.stat.common.k: java.lang.String d(java.lang.String)
+com.tencent.stat.common.k: java.lang.String u(android.content.Context)
+com.tencent.stat.common.k: java.lang.String b(android.content.Context,java.lang.String)
+com.tencent.stat.common.k: java.lang.String v(android.content.Context)
+com.tencent.stat.common.k: java.lang.Integer w(android.content.Context)
+com.tencent.stat.common.k: java.lang.String e()
+com.tencent.stat.common.k: long f()
+com.tencent.stat.common.k: java.lang.String x(android.content.Context)
+com.tencent.stat.common.k: long G(android.content.Context)
+com.tencent.stat.common.k: long i()
+com.tencent.stat.common.k: com.tencent.stat.common.l y(android.content.Context)
+com.tencent.stat.common.k: org.json.JSONObject z(android.content.Context)
+com.tencent.stat.common.k: java.lang.String A(android.content.Context)
+com.tencent.stat.common.k: android.net.wifi.WifiInfo B(android.content.Context)
+com.tencent.stat.common.k: java.lang.String C(android.content.Context)
+com.tencent.stat.common.k: java.lang.String D(android.content.Context)
+com.tencent.stat.common.k: int E(android.content.Context)
+com.tencent.stat.common.k: void F(android.content.Context)
+com.tencent.stat.common.k: com.tencent.stat.common.StatLogger g()
+com.tencent.stat.common.k: void <clinit>()
+com.tencent.stat.common.l
+com.tencent.stat.common.l: l()
+com.tencent.stat.common.l: int a()
+com.tencent.stat.common.l: int b()
+com.tencent.stat.common.l: int c()
+com.tencent.stat.common.l: java.lang.String d()
+com.tencent.stat.common.m
+com.tencent.stat.common.m: m()
+com.tencent.stat.common.m: boolean accept(java.io.File)
+com.tencent.stat.common.n
+com.tencent.stat.common.o
+com.tencent.stat.common.o: int a
+com.tencent.stat.common.o: boolean a()
+com.tencent.stat.common.o: void <clinit>()
+com.tencent.stat.common.p
+com.tencent.stat.common.p: android.content.SharedPreferences a
+com.tencent.stat.common.p: android.content.SharedPreferences a(android.content.Context)
+com.tencent.stat.common.p: long a(android.content.Context,java.lang.String,long)
+com.tencent.stat.common.p: void b(android.content.Context,java.lang.String,long)
+com.tencent.stat.common.p: int a(android.content.Context,java.lang.String,int)
+com.tencent.stat.common.p: void b(android.content.Context,java.lang.String,int)
+com.tencent.stat.common.p: java.lang.String a(android.content.Context,java.lang.String,java.lang.String)
+com.tencent.stat.common.p: void b(android.content.Context,java.lang.String,java.lang.String)
+com.tencent.stat.common.p: void <clinit>()
+com.tencent.stat.d
+com.tencent.stat.d: com.tencent.stat.common.StatLogger c
+com.tencent.stat.d: long d
+com.tencent.stat.d: org.apache.http.impl.client.DefaultHttpClient a
+com.tencent.stat.d: android.os.Handler b
+com.tencent.stat.d: com.tencent.stat.d e
+com.tencent.stat.d: android.content.Context f
+com.tencent.stat.d: d()
+com.tencent.stat.d: void a(android.content.Context)
+com.tencent.stat.d: android.content.Context a()
+com.tencent.stat.d: com.tencent.stat.d b()
+com.tencent.stat.d: void a(java.util.List,com.tencent.stat.c)
+com.tencent.stat.d: void b(java.util.List,com.tencent.stat.c)
+com.tencent.stat.d: void a(com.tencent.stat.a.e,com.tencent.stat.c)
+com.tencent.stat.d: com.tencent.stat.common.StatLogger c()
+com.tencent.stat.d: void <clinit>()
+com.tencent.stat.e
+com.tencent.stat.e: com.tencent.stat.d a
+com.tencent.stat.e: e(com.tencent.stat.d)
+com.tencent.stat.e: long getKeepAliveDuration(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)
+com.tencent.stat.f
+com.tencent.stat.f: java.util.List a
+com.tencent.stat.f: com.tencent.stat.c b
+com.tencent.stat.f: com.tencent.stat.d c
+com.tencent.stat.f: f(com.tencent.stat.d,java.util.List,com.tencent.stat.c)
+com.tencent.stat.f: void run()
+com.tencent.stat.g
+com.tencent.stat.g: android.content.Context a
+com.tencent.stat.g: g(android.content.Context)
+com.tencent.stat.g: void uncaughtException(java.lang.Thread,java.lang.Throwable)
+com.tencent.stat.h
+com.tencent.stat.h: int[] a
+com.tencent.stat.h: void <clinit>()
+com.tencent.stat.i
+com.tencent.stat.i: android.content.Context a
+com.tencent.stat.i: i(android.content.Context)
+com.tencent.stat.i: void run()
+com.tencent.stat.j
+com.tencent.stat.j: android.content.Context a
+com.tencent.stat.j: java.util.Map b
+com.tencent.stat.j: j(android.content.Context,java.util.Map)
+com.tencent.stat.j: java.util.Map a()
+com.tencent.stat.j: void run()
+com.tencent.stat.j: com.tencent.stat.NetworkMonitor a(java.lang.String,int)
+com.tencent.stat.k
+com.tencent.stat.k: com.tencent.stat.a.e a
+com.tencent.stat.k: com.tencent.stat.StatReportStrategy b
+com.tencent.stat.k: com.tencent.stat.c c
+com.tencent.stat.k: k(com.tencent.stat.a.e)
+com.tencent.stat.k: void a()
+com.tencent.stat.k: void a(boolean)
+com.tencent.stat.k: void run()
+com.tencent.stat.k: com.tencent.stat.a.e a(com.tencent.stat.k)
+com.tencent.stat.l
+com.tencent.stat.l: com.tencent.stat.k a
+com.tencent.stat.l: l(com.tencent.stat.k)
+com.tencent.stat.l: void a()
+com.tencent.stat.l: void b()
+com.tencent.stat.m
+com.tencent.stat.m: com.tencent.stat.k a
+com.tencent.stat.m: m(com.tencent.stat.k)
+com.tencent.stat.m: void a()
+com.tencent.stat.m: void b()
+com.tencent.stat.n
+com.tencent.stat.n: com.tencent.stat.w d
+com.tencent.stat.n: android.os.Handler a
+com.tencent.stat.n: int b
+com.tencent.stat.n: com.tencent.stat.DeviceInfo c
+com.tencent.stat.n: com.tencent.stat.common.StatLogger e
+com.tencent.stat.n: com.tencent.stat.n f
+com.tencent.stat.n: java.util.HashMap g
+com.tencent.stat.n: int a()
+com.tencent.stat.n: n(android.content.Context)
+com.tencent.stat.n: void e()
+com.tencent.stat.n: com.tencent.stat.n a(android.content.Context)
+com.tencent.stat.n: com.tencent.stat.n b()
+com.tencent.stat.n: com.tencent.stat.DeviceInfo b(android.content.Context)
+com.tencent.stat.n: void b(java.util.List)
+com.tencent.stat.n: void b(java.util.List,int)
+com.tencent.stat.n: void a(java.util.List,int)
+com.tencent.stat.n: void a(java.util.List)
+com.tencent.stat.n: void c(java.util.List,int)
+com.tencent.stat.n: void b(com.tencent.stat.a.e,com.tencent.stat.c)
+com.tencent.stat.n: void a(com.tencent.stat.a.e,com.tencent.stat.c)
+com.tencent.stat.n: void b(com.tencent.stat.b)
+com.tencent.stat.n: void a(com.tencent.stat.b)
+com.tencent.stat.n: void c()
+com.tencent.stat.n: void b(int)
+com.tencent.stat.n: void a(int)
+com.tencent.stat.n: void f()
+com.tencent.stat.n: void a(com.tencent.stat.n)
+com.tencent.stat.n: void a(com.tencent.stat.n,java.util.List,int)
+com.tencent.stat.n: void a(com.tencent.stat.n,java.util.List)
+com.tencent.stat.n: void a(com.tencent.stat.n,com.tencent.stat.a.e,com.tencent.stat.c)
+com.tencent.stat.n: void a(com.tencent.stat.n,com.tencent.stat.b)
+com.tencent.stat.n: com.tencent.stat.w b(com.tencent.stat.n)
+com.tencent.stat.n: com.tencent.stat.common.StatLogger d()
+com.tencent.stat.n: void a(com.tencent.stat.n,int)
+com.tencent.stat.n: void <clinit>()
+com.tencent.stat.o
+com.tencent.stat.o: com.tencent.stat.n a
+com.tencent.stat.o: o(com.tencent.stat.n)
+com.tencent.stat.o: void run()
+com.tencent.stat.p
+com.tencent.stat.p: java.util.List a
+com.tencent.stat.p: int b
+com.tencent.stat.p: com.tencent.stat.n c
+com.tencent.stat.p: p(com.tencent.stat.n,java.util.List,int)
+com.tencent.stat.p: void run()
+com.tencent.stat.q
+com.tencent.stat.q: java.util.List a
+com.tencent.stat.q: com.tencent.stat.n b
+com.tencent.stat.q: q(com.tencent.stat.n,java.util.List)
+com.tencent.stat.q: void run()
+com.tencent.stat.r
+com.tencent.stat.r: com.tencent.stat.a.e a
+com.tencent.stat.r: com.tencent.stat.c b
+com.tencent.stat.r: com.tencent.stat.n c
+com.tencent.stat.r: r(com.tencent.stat.n,com.tencent.stat.a.e,com.tencent.stat.c)
+com.tencent.stat.r: void run()
+com.tencent.stat.s
+com.tencent.stat.s: com.tencent.stat.b a
+com.tencent.stat.s: com.tencent.stat.n b
+com.tencent.stat.s: s(com.tencent.stat.n,com.tencent.stat.b)
+com.tencent.stat.s: void run()
+com.tencent.stat.t
+com.tencent.stat.t: com.tencent.stat.n a
+com.tencent.stat.t: t(com.tencent.stat.n)
+com.tencent.stat.t: void run()
+com.tencent.stat.u
+com.tencent.stat.u: java.util.List a
+com.tencent.stat.u: int b
+com.tencent.stat.u: com.tencent.stat.n c
+com.tencent.stat.u: u(com.tencent.stat.n,java.util.List,int)
+com.tencent.stat.u: void a()
+com.tencent.stat.u: void b()
+com.tencent.stat.v
+com.tencent.stat.v: int a
+com.tencent.stat.v: com.tencent.stat.n b
+com.tencent.stat.v: v(com.tencent.stat.n,int)
+com.tencent.stat.v: void run()
+com.tencent.stat.w
+com.tencent.stat.w: w(android.content.Context)
+com.tencent.stat.w: void onCreate(android.database.sqlite.SQLiteDatabase)
+com.tencent.stat.w: void a(android.database.sqlite.SQLiteDatabase)
+com.tencent.stat.w: void b(android.database.sqlite.SQLiteDatabase)
+com.tencent.stat.w: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)
+com.tencent.stat.x
+com.tencent.stat.x: long a
+com.tencent.stat.x: java.lang.String b
+com.tencent.stat.x: int c
+com.tencent.stat.x: int d
+com.tencent.stat.x: x(long,java.lang.String,int,int)
 com.tencent.tauth.AuthActivity
 com.tencent.tauth.AuthActivity: java.lang.String ACTION_KEY
 com.tencent.tauth.AuthActivity: java.lang.String TAG
