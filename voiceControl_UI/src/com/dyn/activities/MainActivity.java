@@ -67,12 +67,15 @@ import android.view.View.OnTouchListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.baidu.mapapi.SDKInitializer;
@@ -110,7 +113,7 @@ import com.iflytek.cloud.UnderstanderResult;
 import com.iflytek.pushclient.PushManager;
 import com.library.decrawso.DecRawso;
 /**
- * 显示地图的activity
+ * 
  * @author 邓耀宁
  */
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -238,6 +241,8 @@ public class MainActivity extends BaseActivity{
     private CustomToast toast_speech;
     private ImageView imageView_toast_voice;
     
+    private boolean mShowTipsView = false;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -286,8 +291,8 @@ public class MainActivity extends BaseActivity{
 		
 		initView();
 		
-		LinearLayout linearLayout_main_chat = (LinearLayout)findViewById(R.id.linearLayout_main_chat);
-		AutoLoadingUtils.setAutoLoadingView(linearLayout_main_chat);
+		RelativeLayout relativeLayout_main_chat = (RelativeLayout)findViewById(R.id.relativeLayout_main_chat);
+		AutoLoadingUtils.setAutoLoadingView(relativeLayout_main_chat);
 		
 		new AsyncTask<Void, Integer, Void>(){
 
@@ -346,9 +351,56 @@ public class MainActivity extends BaseActivity{
 				iFilter.addAction(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR);
 				mapReceiver = new BaiduMapSDKReceiver();
 				registerReceiver(mapReceiver, iFilter);
+				
+				final TextView tv_main_tips = (TextView)findViewById(R.id.tv_main_tips);
+				tv_main_tips.setOnClickListener(new OnClickListener() {
+					
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						Intent intent  = new Intent(MainActivity.this,ShowHelpActivity.class);
+						startActivity(intent);
+					}
+				});
+				
+				chatListView.setOnScrollListener(new OnScrollListener() {
+					
+					@Override
+					public void onScrollStateChanged(AbsListView view, int scrollState) {
+						// TODO Auto-generated method stub
+						switch (scrollState) {
+		                // 当不滚动时
+		                case OnScrollListener.SCROLL_STATE_IDLE:// 是当屏幕停止滚动时
+		                    // 判断滚动到底部
+//		                    if (chatListView.getLastVisiblePosition() == (chatListView
+//		                            .getCount() - 1)) {
+//		                    	
+//		                    }
+		                    // 判断滚动到顶部
+		                    if (chatListView.getFirstVisiblePosition() == 0) {
+		                    	
+		                    }else{
+		                    	
+		                    }
+		                    //showTipsView(tv_main_tips);
+		                    break;
+		                case OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:// 滚动时
+		                	//hideTipsView(tv_main_tips);
+		                    break;
+		                case OnScrollListener.SCROLL_STATE_FLING:// 是当用户由于之前划动屏幕并抬起手指，屏幕产生惯性滑动时
+		                    break;
+						}
+					}
+					
+					@Override
+					public void onScroll(AbsListView view, int firstVisibleItem,
+							int visibleItemCount, int totalItemCount) {
+						// TODO Auto-generated method stub
+						
+					}
+				});
 			}
 		}.execute();
-		
 		
 	}
 
@@ -2377,4 +2429,46 @@ public class MainActivity extends BaseActivity{
 			}
 
 		}
+	
+	public void showTipsView(final TextView textView) {
+        textView.setVisibility(View.VISIBLE);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.anim_search_view_show);
+        anim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            	textView.requestFocus();
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        textView.startAnimation(anim);
+        mShowTipsView = true;
+    }
+
+    public void hideTipsView(final TextView textView) {
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.anim_search_view_hide);
+        anim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+            @Override
+            public void onAnimationEnd(Animation animation) {
+            	textView.setVisibility(View.GONE);
+            }
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        textView.startAnimation(anim);
+        mShowTipsView = false;
+    }
 }
